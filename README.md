@@ -118,6 +118,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <h3>Install Active Directory</h3>
     8. Login to DC-1 and install Active Directory Domain Services <br>
     &nbsp &nbsp - If not already, log in to DC-1 using Remote Desktop Connection <br>
+    &nbsp &nbsp - If Server Manager is not already opened, click Start and click Server Manager <br>
+    
     
     
   </p>
