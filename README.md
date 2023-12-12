@@ -47,7 +47,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Enter a username and password <br>
   &nbsp &nbsp - Click Review + create <br>
   &nbsp &nbsp - Once validation is finished click Create <br><br>
-
+   
+  2. Set the Domain Controller's NIC Private IP address to static: <br>
+  &nbsp &nbsp - Go to Virtual machines <br>
+  &nbsp &nbsp - Click DC-1 <br>
+  &nbsp &nbsp - Under Settings click Networking <br>
+  &nbsp &nbsp - Click the link that is next to Network Interface <br> 
+  &nbsp &nbsp - Under Settings click IP configurations <br>
+  &nbsp &nbsp - Click the Private IP address <br>
+  &nbsp &nbsp - Change the Private IP address to Static <br>
+  &nbsp &nbsp - Click Save <br>
+  
   3. Create the Client VM:<br>
   &nbsp &nbsp - Go to Virtual machines <br>
   &nbsp &nbsp - Click Create, then Azure virtual machine <br>
@@ -56,6 +66,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Set the same region as DC-1 <br>
   &nbsp &nbsp - Set the Image to Windows 10 <br>
   &nbsp &nbsp - Set the username and password, you can use the same as DC-1 <br>
+  &nbsp &nbsp - Click Review + create <br>
+  &nbsp &nbsp - Click Create <br>
+
+   4.
+
+  <h3>Ensure Connectivity between the Client and Domain Controller</h3>
+   5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
+  
   
   
   
