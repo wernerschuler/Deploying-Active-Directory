@@ -46,7 +46,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Set Size to 2 vcpu or more <br>
   &nbsp &nbsp - Enter a username and password <br>
   &nbsp &nbsp - Click Review + create <br>
-  &nbsp &nbsp - Once validation is finished click Create <br><br>
+  &nbsp &nbsp - Once validation is finished click Create <br>
    
   2. Set the Domain Controller's NIC Private IP address to static: <br>
   &nbsp &nbsp - Go to Virtual machines <br>
@@ -69,14 +69,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Click Review + create <br>
   &nbsp &nbsp - Click Create <br>
 
-   4.
-
-  <h3>Ensure Connectivity between the Client and Domain Controller</h3>
-   5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
-  
-  
-  
-  
+    
 </p>
 <br />
 
