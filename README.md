@@ -73,14 +73,53 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Click Create <br> </p>
 
   <p>
-    4. Ensure both VMs are in the same Vnet
+    4. Ensure both VMs are in the same Vnet:
   </p>
 
   <p>
     <h3>Ensure Connectivity between the client and Domain Controller</h3> 
     5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
     &nbsp &nbsp - Click Start <br>
-    &nbsp &nbsp - Search Remote Desktop Connection
+    &nbsp &nbsp - Search Remote Desktop Connection <br>
+    &nbsp &nbsp - Enter the public IP address of Client-1 <br>
+    &nbsp &nbsp - Click More choices <br>
+    &nbsp &nbsp - Click Use a different account <br>
+    &nbsp &nbsp - Enter the username and password you created for Client-1 <br>
+    &nbsp &nbsp - Go to Azure portal and copy DC-1's private IP address <br>
+    &nbsp &nbsp - From Client-1 VM click Start <br>
+    &nbsp &nbsp - Enter cmd, then click Open <br>
+    &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address) <br>
+    &nbsp &nbsp - You should get 'Request timed out.' <br>  
+  </p>
+
+  <p>
+    6. Login to the Domain Controller and enable ICMPv4 in the local windows Firewall: <br>
+    &nbsp &nbsp - Go to the Azure portal <br>
+    &nbsp &nbsp - Copy DC-1's public IP address <br>
+    &nbsp &nbsp - Open another instance of Remote Desktop Connection <br>
+    &nbsp &nbsp - Paste DC-1's IP address and click Connect <br>
+    &nbsp &nbsp - Click More choices <br>
+    &nbsp &nbsp - Click Use a different account <br>
+    &nbsp &nbsp - Enter the username and password you created for DC-1 <br>
+    &nbsp &nbsp - Click Start <br>
+    &nbsp &nbsp - Type firewall, then select Windows Defender Firewall with Advanced Security <br>
+    &nbsp &nbsp - Click Inbound Rules <br>
+    &nbsp &nbsp - Under the Protocol row look for ICMPv4 <br>
+    &nbsp &nbsp - Right click and enable both 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) <br>
+  </p>
+  
+   <p>
+    7. Check back at Client-1 to see the ping succeed: <br>
+    &nbsp &nbsp - Go back to Client-1 and check to see if the ping to DC-1 is now working <br>
+    &nbsp &nbsp - Press Ctrl + C to stop the ping <br>  
+  </p>
+
+  <p>
+    <h3>Install Active Directory</h3>
+    8. Login to DC-1 and install Active Directory Domain Services <br>
+    &nbsp &nbsp - If not already, log in to DC-1 VM using Remote Desktop Connection <br>
+    
+    
   </p>
 
     
