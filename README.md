@@ -119,9 +119,36 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     8. Login to DC-1 and install Active Directory Domain Services <br>
     &nbsp &nbsp - If not already, log in to DC-1 using Remote Desktop Connection <br>
     &nbsp &nbsp - If Server Manager is not already opened, click Start and click Server Manager <br>
-    
-    
-    
+    &nbsp &nbsp - Click Add roles and features <br>
+    &nbsp &nbsp - Click Next <br>
+    &nbsp &nbsp - For Installation Type click Next <br>
+    &nbsp &nbsp - For Server Selection make sure that DC-1 is highlighted then click Next <br>
+    &nbsp &nbsp - For Server Roles check Active Directory Domain Services, click Add Features, then click Next <br>
+    &nbsp &nbsp - For AD DS click Next <br>
+    &nbsp &nbsp - Click Install <br>  
+  </p>
+
+  <p>
+    9.Promote as a Domain controller <br>
+    &nbsp &nbsp - Top right corner of the screen there is a yellow exclamation symbol. Click this symbol, then click Promote this server to a domain controller <br>
+    &nbsp &nbsp - Click Add a new forest <br>
+    &nbsp &nbsp - Add a root domain name, then click Next <br>
+    &nbsp &nbsp - Add a password, then click Next <br>
+    &nbsp &nbsp - At DNS Options, click Next <br>
+    &nbsp &nbsp - At Additional Options, click Next <br>
+    &nbsp &nbsp - Click Next until it gives you the option to Install <br> 
+  </p>
+
+  <p>
+    10. Restart and then log back into DC-1 as the user (domain name\username): <br>
+    &nbsp &nbsp - Restart DC-1 VM <br>
+    &nbsp &nbsp - In Azure portal Refresh DC-1 <br>
+    &nbsp &nbsp - Log back into DC-1 as (domain name\username) <br> 
+  </p>
+
+  <p>
+    <h3>Create an Admin and Normal User Account in AD</h3>
+    11. 
   </p>
 
     
