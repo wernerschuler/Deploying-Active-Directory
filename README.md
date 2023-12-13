@@ -196,6 +196,37 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   <p>
     <h3>Join Client-1 to your domain</h3>
     17. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address: <br>
+    &nbsp &nbsp - Go to the Azure portal <br>
+    &nbsp &nbsp - Go to Virtual machines, then DC-1 <br>
+    &nbsp &nbsp - Click Networking <br>
+    &nbsp &nbsp - Next to NIC Private IP, copy this address <br>
+    &nbsp &nbsp - Go the virtual machines, then Client-1 <br>
+    &nbsp &nbsp - Click Networking <br>
+    &nbsp &nbsp - Click the link next to 'Network Interface' <br>
+    &nbsp &nbsp - Under Settings, click DNS Servers <br>
+    &nbsp &nbsp - Click Custom <br>
+    &nbsp &nbsp - Paste DC-1's private IP address under DNS server, then click Save <br>  
+  </p>
+
+  <p>
+    18. From the Azure portal, restart Client-1: <br>
+    &nbsp &nbsp - Go to Virtual Machines, Client-1 <br>
+    &nbsp &nbsp - Click Restart <br>
+  </p>
+
+  <p> 
+    19. Login to Client-1 and join it to the domain: <br>
+    &nbsp &nbsp - Login to Client-1 using Remote Desktop connection <br>
+    &nbsp &nbsp - Go to command line, then enter ipconfig /all <br>
+    &nbsp &nbsp - Next to DNS Servers should be DC-1's IP address <br>
+    &nbsp &nbsp - Right click Start <br>
+    &nbsp &nbsp - Click System <br>
+    &nbsp &nbsp - Click Rename this PC (advanced) <br>
+    &nbsp &nbsp - Click Change <br>
+    &nbsp &nbsp - Click Domain, then type your domain name, click OK <br>
+    &nbsp &nbsp - Enter the username and password of the admin account you created previously eg mydomain.com\werner_admin <br>
+    &nbsp &nbsp - The computer will restart <br>
+     
   </p>
 
     
