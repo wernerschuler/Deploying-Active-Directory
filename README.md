@@ -186,7 +186,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   </p>
 
   <p>
-    15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account):
+    15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account): <br>
     &nbsp &nbsp - Log out of DC-1 <br>
     &nbsp &nbsp - Bring up Remote Desktop connnection <br>
     &nbsp &nbsp - Enter DC-1's public IP address <br>
