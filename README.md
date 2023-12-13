@@ -148,7 +148,54 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   <p>
     <h3>Create an Admin and Normal User Account in AD</h3>
-    11. 
+    11. In Active Directory Users and Computers (ADUC), create an Organisational Unit (OU) called _EMPLOYEES <br>
+    &nbsp &nbsp - Click Start <br>
+    &nbsp &nbsp - Type and go to Active Directory Users and Computers <br>
+    &nbsp &nbsp - In the domain you created <br>
+    &nbsp &nbsp - Right click, New, Organizational Unit <br>
+    &nbsp &nbsp - Give it a name of _EMPLOYEES <br>
+  </p>
+
+  <p> 
+   12. Create an Organisational Unit named _ADMINS <br>
+  </p>
+
+  <p>
+    13. Create an admin account <br>
+    &nbsp &nbsp - Go to the _ADMINS OU you created <br>
+    &nbsp &nbsp - Right click, New, User <br>
+    &nbsp &nbsp - Give the accout a name <br>
+    &nbsp &nbsp - I would recommend the login name have the word 'admin' in eg werner_admin <br>
+    &nbsp &nbsp - Click Next <br>
+    &nbsp &nbsp - Add a password <br>
+    &nbsp &nbsp - Usually would tick 'User must change password at next login' but for now tick 'Password never expires' <br>
+    &nbsp &nbsp - Click Next <br>
+    &nbsp &nbsp - Click Finish <br>
+  </p>
+
+  <p>
+    14. Add the account you made previously to the Domain Admins Security Group: <br>
+    &nbsp &nbsp - Right click the account you made<br>
+    &nbsp &nbsp - Click Properties <br>
+    &nbsp &nbsp - Go to Member of <br>
+    &nbsp &nbsp - Click Add <br>
+    &nbsp &nbsp - Type domain admins, then click Check Names <br>
+    &nbsp &nbsp - Click Domain Admins <br>
+    &nbsp &nbsp - Click OK <br>
+    &nbsp &nbsp - Click Apply, then OK <br>   
+  </p>
+
+  <p>
+    15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account):
+    &nbsp &nbsp - Log out of DC-1 <br>
+    &nbsp &nbsp - Bring up Remote Desktop connnection <br>
+    &nbsp &nbsp - Enter DC-1's public IP address <br>
+    &nbsp &nbsp - Log in with (domain name\admin account) <br>  
+  </p>
+
+  <p>
+    <h3>Join Client-1 to your domain</h3>
+    17. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address: <br>
   </p>
 
     
