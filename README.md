@@ -225,8 +225,29 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Click Change <br>
     &nbsp &nbsp - Click Domain, then type your domain name, click OK <br>
     &nbsp &nbsp - Enter the username and password of the admin account you created previously eg mydomain.com\werner_admin <br>
-    &nbsp &nbsp - The computer will restart <br>
-     
+    &nbsp &nbsp - The computer will restart <br>   
+  </p>
+
+  <p>
+    <h3>Setup Remote Desktop for non-administrative users on Client-1</h3> <br>
+    22. Log into Client-1 as (domain name\admin user) and open system properties: <br>
+    &nbsp &nbsp - Open Remote desktop and log into Client-1 as (domain name\admin user) <br>
+    &nbsp &nbsp - Right click the Start menu <br>
+    &nbsp &nbsp - Click Systems <br>
+    &nbsp &nbsp - Click Remote desktop <br>
+    &nbsp &nbsp - Click Select users that can remotely access this PC <br>
+    &nbsp &nbsp - Click Add <br>
+    &nbsp &nbsp - Type 'domain users' <br>
+    &nbsp &nbsp - Click Check Names <br>
+    &nbsp &nbsp - Click OK <br> 
+  </p>
+
+  <p>
+    <h3>Create many additional users and attempt to log into Client-1 with one of the users</h3> <br>
+    27. Login to DC-1 as an admin account eg werner_admin <br>
+    28. Open PowerShell ISE as an administrator: <br>
+    &nbsp &nbsp - Click Start, type and go to PowerShell ISE <br>
+    29. Create a new File and paste the contents of the script into it
   </p>
 
     
