@@ -246,8 +246,18 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     <h3>Create many additional users and attempt to log into Client-1 with one of the users</h3> <br>
     27. Login to DC-1 as an admin account eg werner_admin <br>
     28. Open PowerShell ISE as an administrator: <br>
-    &nbsp &nbsp - Click Start, type and go to PowerShell ISE <br>
-    29. Create a new File and paste the contents of the script into it
+    &nbsp &nbsp - Click Start, type PowerShell ISE <br>
+    &nbsp &nbsp - Right click Windows PowerShell ISE <br>
+    &nbsp &nbsp - Click Run as administrator <br>
+    29. Create a new File and paste the contents of the script into it: <br>
+    &nbsp &nbsp  https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig <br>
+    30. Run the script and observe the accounts being created <br>
+    31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br>
+    &nbsp &nbsp - Go to _EMPLOYEES <br>
+    &nbsp &nbsp - Right click, then click Refresh <br>
+    32. Attempt to log into Client-1 with one of the accounts created from the script (make a note of the password in the script <br>
+    
+    
   </p>
 
     
