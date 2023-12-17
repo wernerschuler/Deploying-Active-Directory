@@ -255,7 +255,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br>
     &nbsp &nbsp - Go to _EMPLOYEES <br>
     &nbsp &nbsp - Right click, then click Refresh <br>
-    32. Attempt to log into Client-1 with one of the accounts created from the script (make a note of the password in the script <br>
+    32. Attempt to log into Client-1 with one of the accounts created from the script (make a note of the password in the script: <br>
+    &nbsp &nbsp - Login in the context of a domain (domain name\account name) <br>
+    
     
     
   </p>
