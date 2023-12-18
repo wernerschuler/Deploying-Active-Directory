@@ -87,11 +87,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Click Create <br> </p>
 
   <p>
-    4. Ensure both VMs are in the same Vnet:
+    4. Ensure both VMs are in the same Vnet: <br>
+    &nbsp &nbsp - Click Virtual machines <br>
+    &nbsp &nbsp - Go to both the VM's that you created <br>
+    &nbsp &nbsp - Under Virtual network/subnet, check both are the same for the 2 VM's
   </p>
 
   <p>
-    <h3>Ensure Connectivity between the client and Domain Controller</h3> 
+    <h3>Ensure Connectivity between the client and Domain Controller</h3>
+  </p>
+  
+    <p>
     5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
     &nbsp &nbsp - Click Start <br>
     &nbsp &nbsp - Search Remote Desktop Connection <br>
@@ -102,7 +108,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Go to Azure portal and copy DC-1's private IP address <br>
     &nbsp &nbsp - From Client-1 VM click Start <br>
     &nbsp &nbsp - Enter cmd, then click Open <br>
-    &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address) <br>
+    &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address), then press Enter <br>
     &nbsp &nbsp - You should get 'Request timed out.' <br>  
   </p>
 
