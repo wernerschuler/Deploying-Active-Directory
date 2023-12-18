@@ -51,6 +51,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Enter a username and password <br>
   &nbsp &nbsp - Click Review + create <br>
   &nbsp &nbsp - Once validation is finished click Create <br> </p>
+<br> <br>
+
+<p>
+<img src="https://i.imgur.com/fPGBzj5.png" height="80%" width="80%" alt="Creating DC"/>
+</p>
   
  <p>
   2. Set the Domain Controller's NIC Private IP address to static: <br>
@@ -59,19 +64,25 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Under Settings click Networking <br>
   &nbsp &nbsp - Click the link that is next to Network Interface <br> 
   &nbsp &nbsp - Under Settings click IP configurations <br>
-  &nbsp &nbsp - Click the Private IP address <br>
-  &nbsp &nbsp - Change the Private IP address to Static <br>
+  &nbsp &nbsp - Click ipconfig1 <br>
+  &nbsp &nbsp - Under Private IP address settings, select Static <br>
   &nbsp &nbsp - Click Save <br> </p>
+
+<br><br>
+ <p>
+<img src="https://i.imgur.com/rMHyR5X.png" height="80%" width="80%" alt="Creating Client"/>
+</p> 
 
   <p>
   3. Create the Client VM:<br>
   &nbsp &nbsp - Go to Virtual machines <br>
   &nbsp &nbsp - Click Create, then Azure virtual machine <br>
-  &nbsp &nbsp - Put this VM in the same resource group as DC-1 <br>
+  &nbsp &nbsp - Use the same resource group that was created in step 1 <br>
   &nbsp &nbsp - Name VM Client-1 <br>
   &nbsp &nbsp - Set the same region as DC-1 <br>
   &nbsp &nbsp - Set the Image to Windows 10 <br>
-  &nbsp &nbsp - Set the username and password, you can use the same as DC-1 <br>
+  &nbsp &nbsp - Set Size to 2 vcpus or more <br>
+  &nbsp &nbsp - Set the username and password <br>
   &nbsp &nbsp - Click Review + create <br>
   &nbsp &nbsp - Click Create <br> </p>
 
