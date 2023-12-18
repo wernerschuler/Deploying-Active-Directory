@@ -31,10 +31,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/bzg1kvw.png" height="80" width="80" alt="Disk Sanitization Steps"/>
-</p>
-<p>
 <h3>Setup Resources in Azure</h3>
+</p>
+
+<p>
+<img src="https://i.imgur.com/rYo77aO.png" height="80%" width="80%" alt="Creating DC"/>
+</p>
+  
   <p>
   1. Create the Domain Controller VM named DC-1: <br>
   &nbsp &nbsp - Go to portal.azure.com <br>
@@ -48,7 +51,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Enter a username and password <br>
   &nbsp &nbsp - Click Review + create <br>
   &nbsp &nbsp - Once validation is finished click Create <br> </p>
-   
+  
  <p>
   2. Set the Domain Controller's NIC Private IP address to static: <br>
   &nbsp &nbsp - Go to Virtual machines <br>
@@ -267,7 +270,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/bzg1kvw.png" height="80%" width="80%" alt="Creating DC"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
