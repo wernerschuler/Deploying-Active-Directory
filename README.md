@@ -41,7 +41,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Virtual machines <br>
   &nbsp &nbsp - Click Create, then Azure virtual machine <br>
   &nbsp &nbsp - Create a Resource group <br>
-  &nbsp &nbsp - Give the VM a name of DC-1, which stands for Domain controller <br>
+  &nbsp &nbsp - Give the VM a name of DC-1 <br>
   &nbsp &nbsp - Set your region <br>
   &nbsp &nbsp - Set Image to Windows Server 2022 <br>
   &nbsp &nbsp - Set Size to 2 vcpu or more <br>
