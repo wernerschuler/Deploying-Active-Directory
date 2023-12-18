@@ -98,18 +98,18 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   </p>
   
     <p>
-    5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
-    &nbsp &nbsp - Click Start <br>
-    &nbsp &nbsp - Search Remote Desktop Connection <br>
-    &nbsp &nbsp - Enter the public IP address of Client-1 <br>
-    &nbsp &nbsp - Click More choices <br>
-    &nbsp &nbsp - Click Use a different account <br>
-    &nbsp &nbsp - Enter the username and password you created for Client-1 <br>
-    &nbsp &nbsp - Go to Azure portal and copy DC-1's private IP address <br>
-    &nbsp &nbsp - From Client-1 VM click Start <br>
-    &nbsp &nbsp - Enter cmd, then click Open <br>
-    &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address), then press Enter <br>
-    &nbsp &nbsp - You should get 'Request timed out.' <br>  
+     5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
+      &nbsp &nbsp - Click Start <br>
+      &nbsp &nbsp - Search Remote Desktop Connection <br>
+      &nbsp &nbsp - Enter the public IP address of Client-1 <br>
+      &nbsp &nbsp - Click More choices <br>
+      &nbsp &nbsp - Click Use a different account <br>
+      &nbsp &nbsp - Enter the username and password you created for Client-1 <br>
+      &nbsp &nbsp - Go to Azure portal and copy DC-1's private IP address <br>
+      &nbsp &nbsp - From Client-1 VM click Start <br>
+      &nbsp &nbsp - Enter cmd, then click Open <br>
+      &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address), then press Enter <br>
+      &nbsp &nbsp - You should get 'Request timed out.' <br>  
   </p>
 
   <p>
