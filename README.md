@@ -101,7 +101,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Under Virtual network/subnet, check that both VMs are in the same Vnet <br> <br>
   </p>
   
-  <h3>Ensure Connectivity between the client and Domain Controller</h3>
+  <h3>(Ensure Connectivity between the client and Domain Controller)</h3> <br>
+
+<p>
+<img src="https://i.imgur.com/ioYv7Lj.png" height="80%" width="80%" alt="Creating Client"/>
+</p> 
 
   <p>
     5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
@@ -121,7 +125,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   
   
 
-
+   <p>
+     <img src="https://i.imgur.com/noj8rzI.png" height="80%" width="80%" alt="Creating Client"/>
+   </p> 
 
   <p>
     6. Login to the Domain Controller and enable ICMPv4 in the local windows Firewall: <br>
@@ -135,8 +141,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Click Start <br>
     &nbsp &nbsp - Type firewall, then select Windows Defender Firewall with Advanced Security <br>
     &nbsp &nbsp - Click Inbound Rules <br>
-    &nbsp &nbsp - Under the Protocol row look for ICMPv4 <br>
-    &nbsp &nbsp - Right click and enable both 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) <br>
+    &nbsp &nbsp - Click Protocol <br>
+    &nbsp &nbsp - Under Protocol look for ICMPv4 <br>
+    &nbsp &nbsp - Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) <br>
   </p>
   
    <p>
@@ -145,8 +152,13 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Press Ctrl + C to stop the ping <br>  
   </p>
 
+  <h3>(Install Active Directory)</h3>
+  
   <p>
-    <h3>(Install Active Directory)</h3>
+    <img src="https://i.imgur.com/iC8sgPC.png" height="80%" width="80%" alt="Creating Client"/>
+  </p>  
+
+  <p>
     8. Login to DC-1 and install Active Directory Domain Services <br>
     &nbsp &nbsp - If not already, log in to DC-1 using Remote Desktop Connection <br>
     &nbsp &nbsp - If Server Manager is not already opened, click Start and click Server Manager <br>
