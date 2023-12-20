@@ -31,7 +31,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Steps</h2>
 
 <p>
-<h3>Setup Resources in Azure</h3>
+<h3>(Setup Resources in Azure)</h3>
 </p>
 
 <p>
@@ -39,7 +39,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
   
   <p>
-  1. Create the Domain Controller VM named DC-1: <br>
+  1. Create the Domain Controller VM named DC-1:<br>
   &nbsp &nbsp - Go to portal.azure.com <br>
   &nbsp &nbsp - Virtual machines <br>
   &nbsp &nbsp - Click Create, then Azure virtual machine <br>
@@ -50,7 +50,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Set Size to 2 vcpu or more <br>
   &nbsp &nbsp - Enter a username and password <br>
   &nbsp &nbsp - Click Review + create <br>
-  &nbsp &nbsp - Once validation is finished click Create <br> </p>
+  &nbsp &nbsp - Once validation is finished click Create <br>
+  &nbsp &nbsp - Wait until deployment is complete, then move on to the next step
+  </p>
 <br> <br>
 
 <p>
@@ -66,7 +68,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Under Settings click IP configurations <br>
   &nbsp &nbsp - Click ipconfig1 <br>
   &nbsp &nbsp - Under Private IP address settings, select Static <br>
-  &nbsp &nbsp - Click Save <br> </p>
+  &nbsp &nbsp - Click Save </p>
 
 <br><br>
  <p>
@@ -83,34 +85,43 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Set the Image to Windows 10 <br>
   &nbsp &nbsp - Set Size to 2 vcpus or more <br>
   &nbsp &nbsp - Set the username and password <br>
+  &nbsp &nbsp - Click Next until you get to Networking <br>
+  &nbsp &nbsp - Use the same Virtual network that was created in step 1 <br>
   &nbsp &nbsp - Click Review + create <br>
-  &nbsp &nbsp - Click Create <br> </p>
+  &nbsp &nbsp - Click Create <br><br> </p>
+
+<p>
+<img src="https://i.imgur.com/XW4wARY.png" height="80%" width="80%" alt="Creating Client"/>
+</p> 
 
   <p>
     4. Ensure both VMs are in the same Vnet: <br>
     &nbsp &nbsp - Click Virtual machines <br>
     &nbsp &nbsp - Go to both the VM's that you created <br>
-    &nbsp &nbsp - Under Virtual network/subnet, check both are the same for the 2 VM's
-  </p>
-
-  <p>
-    <h3>Ensure Connectivity between the client and Domain Controller</h3>
+    &nbsp &nbsp - Under Virtual network/subnet, check that both VMs are in the same Vnet <br> <br>
   </p>
   
-    <p>
-     5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
-      &nbsp &nbsp - Click Start <br>
-      &nbsp &nbsp - Search Remote Desktop Connection <br>
-      &nbsp &nbsp - Enter the public IP address of Client-1 <br>
-      &nbsp &nbsp - Click More choices <br>
-      &nbsp &nbsp - Click Use a different account <br>
-      &nbsp &nbsp - Enter the username and password you created for Client-1 <br>
-      &nbsp &nbsp - Go to Azure portal and copy DC-1's private IP address <br>
-      &nbsp &nbsp - From Client-1 VM click Start <br>
-      &nbsp &nbsp - Enter cmd, then click Open <br>
-      &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address), then press Enter <br>
-      &nbsp &nbsp - You should get 'Request timed out.' <br>  
+  <h3>Ensure Connectivity between the client and Domain Controller</h3>
+
+  <p>
+    5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
+    &nbsp &nbsp - Click Start <br>
+    &nbsp &nbsp - Search Remote Desktop Connection <br>
+    &nbsp &nbsp - Enter the public IP address of Client-1 <br>
+    &nbsp &nbsp - Click More choices <br>
+    &nbsp &nbsp - Click Use a different account <br>
+    &nbsp &nbsp - Enter the username and password you created for Client-1 <br>
+    &nbsp &nbsp - Go to Azure portal and copy DC-1's private IP address <br>
+    &nbsp &nbsp - From Client-1 VM click Start <br>
+    &nbsp &nbsp - Enter cmd, then click Open <br>
+    &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address), then press Enter <br>
+    &nbsp &nbsp - You should get 'Request timed out.' <br><br>
   </p>
+  
+  
+  
+
+
 
   <p>
     6. Login to the Domain Controller and enable ICMPv4 in the local windows Firewall: <br>
@@ -135,7 +146,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   </p>
 
   <p>
-    <h3>Install Active Directory</h3>
+    <h3>(Install Active Directory)</h3>
     8. Login to DC-1 and install Active Directory Domain Services <br>
     &nbsp &nbsp - If not already, log in to DC-1 using Remote Desktop Connection <br>
     &nbsp &nbsp - If Server Manager is not already opened, click Start and click Server Manager <br>
