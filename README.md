@@ -192,12 +192,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   <p>
     <h3>Create an Admin and Normal User Account in AD</h3>
     11. In Active Directory Users and Computers (ADUC), create an Organisational Unit (OU) called _EMPLOYEES <br>
+    &nbsp &nbsp - In DC-1 <br>
     &nbsp &nbsp - Click Start <br>
     &nbsp &nbsp - Type and go to Active Directory Users and Computers <br>
     &nbsp &nbsp - In the domain you created <br>
     &nbsp &nbsp - Right click, New, Organizational Unit <br>
     &nbsp &nbsp - Give it a name of _EMPLOYEES <br>
   </p>
+
+  <p>
+    <img src="https://i.imgur.com/Cajormq.png" height="80%" width="80%" alt="Creating OU"/>
+  </p> 
 
   <p> 
    12. Create an Organisational Unit named _ADMINS <br>
