@@ -209,7 +209,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   </p>
 
   <p>
-    13. Create an admin account <br>
+    13. Create an admin account: <br>
     &nbsp &nbsp - Go to the _ADMINS OU you created <br>
     &nbsp &nbsp - Right click, New, User <br>
     &nbsp &nbsp - Give the accout a name <br>
@@ -220,6 +220,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Click Next <br>
     &nbsp &nbsp - Click Finish <br>
   </p>
+
+  <p>
+   <img src="https://i.imgur.com/jGdK7oP.png" height="80%" width="80%" alt="Creating 
+    OU"/>
+  </p> 
 
   <p>
     14. Add the account you made previously to the Domain Admins Security Group: <br>
@@ -233,6 +238,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Click Apply, then OK <br>   
   </p>
 
+   <p>
+   <img src="https://i.imgur.com/Ac7IbTV.png" height="80%" width="80%" alt="Log in as admin"/>
+   </p>
+
   <p>
     15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account): <br>
     &nbsp &nbsp - Log out of DC-1 <br>
@@ -241,8 +250,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Log in with (domain name\admin account) <br>  
   </p>
 
+  
+  <h3>Join Client-1 to your domain</h3>
+  
+
   <p>
-    <h3>Join Client-1 to your domain</h3>
+   <img src="https://i.imgur.com/ezOqQxR.png" height="80%" width="80%" alt="Log in as admin"/>
+   <img src="https://i.imgur.com/rBQmVfm.png" height="80%" width="80%" alt="Log in as admin"/>
+  </p>
+
+  <p>
     17. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address: <br>
     &nbsp &nbsp - Go to the Azure portal <br>
     &nbsp &nbsp - Go to Virtual machines, then DC-1 <br>
@@ -262,11 +279,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Click Restart <br>
   </p>
 
+  <p>
+   <img src="https://i.imgur.com/UjIuuqi.png" height="80%" width="80%" alt="Log in as admin"/>
+   <img src="https://i.imgur.com/rBQmVfm.png" height="80%" width="80%" alt="Log in as admin"/>
+   <img src="https://i.imgur.com/rBQmVfm.png" height="80%" width="80%" alt="Log in as admin"/>
+  </p>
+
   <p> 
     19. Login to Client-1 and join it to the domain: <br>
     &nbsp &nbsp - Login to Client-1 using Remote Desktop connection <br>
     &nbsp &nbsp - Go to command line, then enter ipconfig /all <br>
-    &nbsp &nbsp - Next to DNS Servers should be DC-1's IP address <br>
+    &nbsp &nbsp - Next to DNS Servers should be DC-1's private IP address <br>
     &nbsp &nbsp - Right click Start <br>
     &nbsp &nbsp - Click System <br>
     &nbsp &nbsp - Click Rename this PC (advanced) <br>
