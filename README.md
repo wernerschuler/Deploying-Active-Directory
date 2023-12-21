@@ -80,7 +80,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   &nbsp &nbsp - Go to Virtual machines <br>
   &nbsp &nbsp - Click Create, then Azure virtual machine <br>
   &nbsp &nbsp - Use the same resource group that was created in step 1 <br>
-  &nbsp &nbsp - Name VM Client-1 <br>
+  &nbsp &nbsp - Name the VM Client-1 <br>
   &nbsp &nbsp - Set the same region as DC-1 <br>
   &nbsp &nbsp - Set the Image to Windows 10 <br>
   &nbsp &nbsp - Set Size to 2 vcpus or more <br>
