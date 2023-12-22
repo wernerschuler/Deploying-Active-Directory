@@ -300,6 +300,18 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   </p>
 
   <p>
+    <img src="https://i.imgur.com/2MNTnjJ.png" height="80%" width="80%" alt="Log in as admin"/>
+  </p>
+  <p>
+    20. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container: <br>
+    &nbsp &nbsp - Login to DC-1 <br>
+    &nbsp &nbsp - Click Start <br>
+    &nbsp &nbsp - Type and select Acive Directory Users and Computers <br>
+    &nbsp &nbsp - Click mydomain.com <br>
+    &nbsp &nbsp - Click Computers <br> 
+  </p>
+
+  <p>
     <h3>Setup Remote Desktop for non-administrative users on Client-1</h3> <br>
     22. Log into Client-1 as (domain name\admin user) and open system properties: <br>
     &nbsp &nbsp - Open Remote desktop and log into Client-1 as (domain name\admin user) <br>
