@@ -311,8 +311,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Click Computers <br> 
   </p>
 
+  
+
   <p>
     <h3>Setup Remote Desktop for non-administrative users on Client-1</h3> <br>
+  </p>
+    
+  <p>
+  <img src="https://i.imgur.com/qNi9X2a.png" height="80%" width="80%" alt="Log in as admin"/>
+  </p>
+
+  <p>
     22. Log into Client-1 as (domain name\admin user) and open system properties: <br>
     &nbsp &nbsp - Open Remote desktop and log into Client-1 as (domain name\admin user) <br>
     &nbsp &nbsp - Right click the Start menu <br>
