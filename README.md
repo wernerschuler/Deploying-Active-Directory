@@ -3,30 +3,24 @@
 </p>
 
 <h1>Active Directory Deployment</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
-
-
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+This tutorial outlines how to deploy Active Directory and create users<br />
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
-- Internet Information Services (IIS)
+- Active Directory Users and Computers
+- PowerShell ISE
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
+- Windows Server 2022 
 
-<h2>List of Prerequisites</h2>
+<h2>Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Microsoft Azure subscription
+  
 
 <h2>Steps</h2>
 
@@ -361,13 +355,15 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   <p>
     30. Run the script and observe the accounts being created <br>
-    &nbsp &nbsp - Click Green button to Run script <br>
+    &nbsp &nbsp - Click Green button to Run script <br> <br>
+  </p>
+
+  <p>
+    <img src="https://i.imgur.com/idcs1CJ.png" height="80%" width="80%" alt="Log in as admin"/>
   </p>
 
   <p>
     31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br>
-    &nbsp &nbsp - Go to _EMPLOYEES <br>
-    &nbsp &nbsp - Right click, then click Refresh <br>
   </p>
 
   <p>
@@ -377,24 +373,6 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     
     
     
-  </p>
 
     
-</p>
-<br />
 
-<p>
-<img src="https://i.imgur.com/bzg1kvw.png" height="80%" width="80%" alt="Creating DC"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
