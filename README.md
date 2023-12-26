@@ -87,7 +87,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   &nbsp &nbsp - Click Next until you get to Networking <br>
   &nbsp &nbsp - Use the same Virtual network that was created in step 1 <br>
   &nbsp &nbsp - Click Review + create <br>
-  &nbsp &nbsp - Click Create <br><br> </p>
+  &nbsp &nbsp - Click Create <br><br> <br></p>
 
 <hr>
 
@@ -101,6 +101,8 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Go to both the VM's that you created <br>
     &nbsp &nbsp - Under Virtual network/subnet, check that both VMs are in the same Vnet <br> <br> 
   </p>
+
+  <hr>
   
   <h3>(Ensure Connectivity between the client and Domain Controller)</h3> <br>
 
@@ -122,6 +124,8 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address), then press Enter <br>
     &nbsp &nbsp - You should get 'Request timed out.' <br><br>
   </p>
+
+  <hr>
   
   
   
@@ -144,14 +148,18 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Click Inbound Rules <br>
     &nbsp &nbsp - Click Protocol <br>
     &nbsp &nbsp - Under Protocol look for ICMPv4 <br>
-    &nbsp &nbsp - Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) <br>
+    &nbsp &nbsp - Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) <br> <br>
   </p>
+
+  <hr>
   
    <p>
     7. Check back at Client-1 to see the ping succeed: <br>
     &nbsp &nbsp - Go back to Client-1 and check to see if the ping to DC-1 is now working <br>
-    &nbsp &nbsp - Press Ctrl + C to stop the ping <br>  
+    &nbsp &nbsp - Press Ctrl + C to stop the ping <br>  <br>
   </p>
+
+  <hr>
 
   <h3>(Install Active Directory)</h3>
   
@@ -169,11 +177,13 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - For Server Selection make sure that DC-1 is highlighted then click Next <br>
     &nbsp &nbsp - For Server Roles check Active Directory Domain Services, click Add Features, then click Next <br>
     &nbsp &nbsp - For AD DS click Next <br>
-    &nbsp &nbsp - Click Install <br>  
+    &nbsp &nbsp - Click Install <br>  <br>
   </p>
 
+  <hr>
+
   <p>
-    9.Promote as a Domain controller <br>
+    9. Promote as a Domain controller <br>
     &nbsp &nbsp - Top right corner of the screen there is a yellow exclamation symbol. Click this symbol, then click Promote this server to a domain controller <br>
     &nbsp &nbsp - Click Add a new forest <br>
     &nbsp &nbsp - Add a root domain name, then click Next <br>
@@ -181,14 +191,18 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - At DNS Options, click Next <br>
     &nbsp &nbsp - At Additional Options, click Next <br>
     &nbsp &nbsp - Click Next until it gives you the option to Install <br> 
-  </p>
+  </p> <br>
+
+  <hr>
 
   <p>
     10. Restart and then log back into DC-1 as the user (domain name\username): <br>
     &nbsp &nbsp - Restart DC-1 VM <br>
     &nbsp &nbsp - In Azure portal Refresh DC-1 <br>
-    &nbsp &nbsp - Log back into DC-1 as (domain name\username) <br> 
+    &nbsp &nbsp - Log back into DC-1 as (domain name\username) <br> <br>
   </p>
+
+  <hr>
 
   <p>
     <h3>Create an Admin and Normal User Account in AD</h3>
@@ -198,16 +212,20 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Type and go to Active Directory Users and Computers <br>
     &nbsp &nbsp - In the domain you created <br>
     &nbsp &nbsp - Right click, New, Organizational Unit <br>
-    &nbsp &nbsp - Give it a name of _EMPLOYEES <br>
+    &nbsp &nbsp - Give it a name of _EMPLOYEES <br> <br>
   </p>
+
+  <hr>
 
   <p>
     <img src="https://i.imgur.com/Cajormq.png" height="80%" width="80%" alt="Creating OU"/>
   </p> 
 
   <p> 
-   12. Create an Organisational Unit named _ADMINS <br>
+   12. Create an Organisational Unit named _ADMINS <br> <br>
   </p>
+
+  <hr>
 
   <p>
     13. Create an admin account: <br>
@@ -219,12 +237,14 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Add a password <br>
     &nbsp &nbsp - Usually would tick 'User must change password at next login' but for now tick 'Password never expires' <br>
     &nbsp &nbsp - Click Next <br>
-    &nbsp &nbsp - Click Finish <br>
+    &nbsp &nbsp - Click Finish <br> <br>
   </p>
 
+  <hr>
+  
   <p>
    <img src="https://i.imgur.com/jGdK7oP.png" height="80%" width="80%" alt="Creating 
-    OU"/>
+    OU"/> <br>
   </p> 
 
   <p>
@@ -236,8 +256,10 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Type domain admins, then click Check Names <br>
     &nbsp &nbsp - Click Domain Admins <br>
     &nbsp &nbsp - Click OK <br>
-    &nbsp &nbsp - Click Apply, then OK <br>   
+    &nbsp &nbsp - Click Apply, then OK <br> <br> 
   </p>
+
+  <hr>
 
    <p>
    <img src="https://i.imgur.com/Ac7IbTV.png" height="80%" width="80%" alt="Log in as admin"/>
