@@ -47,11 +47,13 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   &nbsp &nbsp - Once validation is finished click Create <br>
   &nbsp &nbsp - Wait until deployment is complete, then move on to the next step
   </p>
-<br> <br>
+<br> 
+
+<hr>
 
 <p>
 <img src="https://i.imgur.com/fPGBzj5.png" height="80%" width="80%" alt="Creating DC"/>
-</p>
+</p> <br>
   
  <p>
   2. Set the Domain Controller's NIC Private IP address to static: <br>
@@ -65,6 +67,9 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   &nbsp &nbsp - Click Save </p>
 
 <br><br>
+
+<hr>
+
  <p>
 <img src="https://i.imgur.com/rMHyR5X.png" height="80%" width="80%" alt="Creating Client"/>
 </p> 
@@ -84,15 +89,17 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   &nbsp &nbsp - Click Review + create <br>
   &nbsp &nbsp - Click Create <br><br> </p>
 
+<hr>
+
 <p>
 <img src="https://i.imgur.com/XW4wARY.png" height="80%" width="80%" alt="Creating Client"/>
-</p> 
+</p> <br> <br>
 
   <p>
     4. Ensure both VMs are in the same Vnet: <br>
     &nbsp &nbsp - Click Virtual machines <br>
     &nbsp &nbsp - Go to both the VM's that you created <br>
-    &nbsp &nbsp - Under Virtual network/subnet, check that both VMs are in the same Vnet <br> <br>
+    &nbsp &nbsp - Under Virtual network/subnet, check that both VMs are in the same Vnet <br> <br> 
   </p>
   
   <h3>(Ensure Connectivity between the client and Domain Controller)</h3> <br>
