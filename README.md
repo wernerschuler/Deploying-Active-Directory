@@ -247,7 +247,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Log out of DC-1 <br>
     &nbsp &nbsp - Bring up Remote Desktop connnection <br>
     &nbsp &nbsp - Enter DC-1's public IP address <br>
-    &nbsp &nbsp - Log in with (domain name\admin account) <br>  
+    &nbsp &nbsp - Login with (domain name\admin account) <br>  
   </p>
 
   
