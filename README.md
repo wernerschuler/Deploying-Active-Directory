@@ -273,14 +273,17 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Login with (domain name\admin account) <br>  
   </p>
 
-  
+  <hr>
+
   <h3>Join Client-1 to your domain</h3>
   
-
   <p>
-   <img src="https://i.imgur.com/ezOqQxR.png" height="80%" width="80%" alt="Log in as admin"/>
-   <img src="https://i.imgur.com/rBQmVfm.png" height="80%" width="80%" alt="Log in as admin"/>
+   <img src="https://i.imgur.com/ezOqQxR.png" height="80%" width="80%" alt="Log in as admin"/> <br> <br>
   </p>
+
+ <p>
+  <img src="https://i.imgur.com/rBQmVfm.png" height="80%" width="80%" alt="Log in as admin"/>
+ </p>
 
   <p>
     17. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address: <br>
@@ -393,6 +396,10 @@ This tutorial outlines how to deploy Active Directory and create users<br />
 
   <p>
     31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br>
+  </p>
+
+  <p>
+    <img src="https://i.imgur.com/WHvAkU5.png" height="80%" width="80%" alt="Log in as admin"/>
   </p>
 
   <p>
