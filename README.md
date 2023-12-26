@@ -336,21 +336,44 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   <p>
     <h3>Create many additional users and attempt to log into Client-1 with one of the users</h3> <br>
+  </p>
+
+  <p>
     27. Login to DC-1 as an admin account eg werner_admin <br>
+  </p>
+
+  <p>
     28. Open PowerShell ISE as an administrator: <br>
     &nbsp &nbsp - Click Start, type PowerShell ISE <br>
     &nbsp &nbsp - Right click Windows PowerShell ISE <br>
     &nbsp &nbsp - Click Run as administrator <br>
+  </p>
+  <p>
     29. Create a new File and paste the contents of the script into it: <br>
     &nbsp &nbsp - Click New Script <br>
     &nbsp &nbsp - Copy and paste the contents of the link below into the script <br>
-    &nbsp &nbsp  https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig <br>
+    &nbsp &nbsp  https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig <br> <br> <br>
+  </p>
+
+  <p>
+    <img src="https://i.imgur.com/ZLLSOXT.png" height="80%" width="80%" alt="Log in as admin"/>
+  </p>
+
+  <p>
     30. Run the script and observe the accounts being created <br>
+    &nbsp &nbsp - Click Green button <br>
+  </p>
+
+  <p>
     31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br>
     &nbsp &nbsp - Go to _EMPLOYEES <br>
     &nbsp &nbsp - Right click, then click Refresh <br>
+  </p>
+
+  <p>
     32. Attempt to log into Client-1 with one of the accounts created from the script (make a note of the password in the script: <br>
     &nbsp &nbsp - Login in the context of a domain (domain name\account name) <br>
+  </p>
     
     
     
