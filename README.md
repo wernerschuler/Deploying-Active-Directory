@@ -342,6 +342,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
     &nbsp &nbsp - Right click Windows PowerShell ISE <br>
     &nbsp &nbsp - Click Run as administrator <br>
     29. Create a new File and paste the contents of the script into it: <br>
+    &nbsp &nbsp - Click New Script <br>
+    &nbsp &nbsp - Copy and paste the contents of the link below into the script <br>
     &nbsp &nbsp  https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig <br>
     30. Run the script and observe the accounts being created <br>
     31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br>
