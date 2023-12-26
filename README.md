@@ -296,20 +296,31 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Click the link next to 'Network Interface' <br>
     &nbsp &nbsp - Under Settings, click DNS Servers <br>
     &nbsp &nbsp - Click Custom <br>
-    &nbsp &nbsp - Paste DC-1's private IP address under DNS server, then click Save <br>  
+    &nbsp &nbsp - Paste DC-1's private IP address under DNS server, then click Save <br> <br>
   </p>
 
+  <hr>
+  
   <p>
     18. From the Azure portal, restart Client-1: <br>
     &nbsp &nbsp - Go to Virtual Machines, Client-1 <br>
-    &nbsp &nbsp - Click Restart <br>
+    &nbsp &nbsp - Click Restart <br> <br>
   </p>
+
+  <hr>
 
   <p>
    <img src="https://i.imgur.com/UjIuuqi.png" height="80%" width="80%" alt="Log in as admin"/>
+  </p>
+  
+  <p>
    <img src="https://i.imgur.com/E2Bbvvi.png" height="80%" width="80%" alt="Log in as admin"/>
+  </p>
+  
+  <p>
    <img src="https://i.imgur.com/86jJAqp.png" height="80%" width="80%" alt="Log in as admin"/>
   </p>
+  
 
   <p> 
     19. Login to Client-1 and join it to the domain: <br>
