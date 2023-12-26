@@ -361,7 +361,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   <p>
     30. Run the script and observe the accounts being created <br>
-    &nbsp &nbsp - Click Green button <br>
+    &nbsp &nbsp - Click Green button to Run script <br>
   </p>
 
   <p>
