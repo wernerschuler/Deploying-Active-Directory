@@ -310,15 +310,15 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   <hr>
 
   <p>
-   <img src="https://i.imgur.com/UjIuuqi.png" height="80%" width="80%" alt="Log in as admin"/>
+   <img src="https://i.imgur.com/UjIuuqi.png" height="80%" width="80%" alt="Log in as admin"/> <br>
   </p>
   
   <p>
-   <img src="https://i.imgur.com/E2Bbvvi.png" height="80%" width="80%" alt="Log in as admin"/>
+   <img src="https://i.imgur.com/E2Bbvvi.png" height="80%" width="80%" alt="Log in as admin"/> <br>
   </p>
   
   <p>
-   <img src="https://i.imgur.com/86jJAqp.png" height="80%" width="80%" alt="Log in as admin"/>
+   <img src="https://i.imgur.com/86jJAqp.png" height="80%" width="80%" alt="Log in as admin"/> <br>
   </p>
   
 
@@ -335,6 +335,8 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Enter the username and password of the admin account you created previously eg mydomain.com\werner_admin <br>
     &nbsp &nbsp - The computer will restart <br>   
   </p>
+
+  <hr>
 
   <p>
     <img src="https://i.imgur.com/2MNTnjJ.png" height="80%" width="80%" alt="Log in as admin"/>
