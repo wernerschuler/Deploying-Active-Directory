@@ -66,7 +66,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   &nbsp &nbsp - Under Private IP address settings, select Static <br>
   &nbsp &nbsp - Click Save </p>
 
-<br><br>
+<br>
 
 <hr>
 
