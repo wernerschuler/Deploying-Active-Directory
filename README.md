@@ -205,7 +205,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   <hr>
 
   <p>
-    <h3>Create an Admin and Normal User Account in AD</h3>
+    <h3>(Create an Admin and Normal User Account in AD)</h3>
     11. In Active Directory Users and Computers (ADUC), create an Organisational Unit (OU) called _EMPLOYEES <br>
     &nbsp &nbsp - In DC-1 <br>
     &nbsp &nbsp - Click Start <br>
@@ -275,7 +275,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
 
   <hr>
 
-  <h3>Join Client-1 to your domain</h3>
+  <h3>(Join Client-1 to your domain)</h3>
   
   <p>
    <img src="https://i.imgur.com/ezOqQxR.png" height="80%" width="80%" alt="Log in as admin"/> <br> <br>
@@ -355,7 +355,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   
 
   <p>
-    <h3>Setup Remote Desktop for non-administrative users on Client-1</h3> <br>
+    <h3>(Setup Remote Desktop for non-administrative users on Client-1)</h3> <br>
   </p>
     
   <p>
@@ -372,29 +372,38 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Click Add <br>
     &nbsp &nbsp - Type 'domain users' <br>
     &nbsp &nbsp - Click Check Names <br>
-    &nbsp &nbsp - Click OK <br> 
+    &nbsp &nbsp - Click OK <br> <br>
+  </p>
+
+  <hr>
+
+  <p>
+    <h3>(Create many additional users and attempt to log into Client-1 with one of the users)</h3> <br>
   </p>
 
   <p>
-    <h3>Create many additional users and attempt to log into Client-1 with one of the users</h3> <br>
+    27. Login to DC-1 as an admin account eg werner_admin <br> <br>
   </p>
 
-  <p>
-    27. Login to DC-1 as an admin account eg werner_admin <br>
-  </p>
+  <hr>
 
   <p>
     28. Open PowerShell ISE as an administrator: <br>
     &nbsp &nbsp - Click Start, type PowerShell ISE <br>
     &nbsp &nbsp - Right click Windows PowerShell ISE <br>
-    &nbsp &nbsp - Click Run as administrator <br>
+    &nbsp &nbsp - Click Run as administrator <br> <br>
   </p>
+
+  <hr>
+  
   <p>
     29. Create a new File and paste the contents of the script into it: <br>
     &nbsp &nbsp - Click New Script <br>
     &nbsp &nbsp - Copy and paste the contents of the link below into the script <br>
     &nbsp &nbsp  https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig <br> <br> <br>
   </p>
+
+  <hr>
 
   <p>
     <img src="https://i.imgur.com/ZLLSOXT.png" height="80%" width="80%" alt="Log in as admin"/>
@@ -405,13 +414,17 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Click Green button to Run script <br> <br>
   </p>
 
+  <hr>
+
   <p>
     <img src="https://i.imgur.com/idcs1CJ.png" height="80%" width="80%" alt="Log in as admin"/>
   </p>
 
   <p>
-    31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br>
+    31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br> <br>
   </p>
+
+  <hr>
 
   <p>
     <img src="https://i.imgur.com/WHvAkU5.png" height="80%" width="80%" alt="Log in as admin"/>
