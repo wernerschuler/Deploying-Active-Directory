@@ -28,7 +28,9 @@ This tutorial outlines how to deploy Active Directory and create users<br />
 <h3>(Setup Resources in Azure)</h3>
 </p>
 
-
+<p>
+<img src="https://i.imgur.com/rYo77aO.png" height="80%" width="80%" alt="Creating DC"/>
+</p>
   
   <p>
   1. Create the Domain Controller VM named DC-1:<br>
@@ -46,10 +48,6 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   &nbsp &nbsp - Wait until deployment is complete, then move on to the next step
   </p>
 <br> 
-
-<p>
-<img src="https://i.imgur.com/rYo77aO.png" height="60%" width="60%" alt="Creating DC"/>
-</p>
 
 <hr>
 
@@ -170,7 +168,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   </p>  
 
   <p>
-    8. Login to DC-1 and install Active Directory Domain Services <br>
+    8. Login to DC-1 and install Active Directory Domain Services: <br>
     &nbsp &nbsp - If not already, login to DC-1 using Remote Desktop Connection <br>
     &nbsp &nbsp - If Server Manager is not already opened, click Start and click Server Manager <br>
     &nbsp &nbsp - Click Add roles and features <br>
@@ -185,7 +183,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   <hr>
 
   <p>
-    9. Promote as a Domain controller <br>
+    9. Promote as a Domain controller: <br>
     &nbsp &nbsp - Top right corner of the screen there is a yellow exclamation symbol. Click this symbol, then click Promote this server to a domain controller <br>
     &nbsp &nbsp - Click Add a new forest <br>
     &nbsp &nbsp - Add a root domain name, then click Next <br>
@@ -349,8 +347,10 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Click Start <br>
     &nbsp &nbsp - Type and select Acive Directory Users and Computers <br>
     &nbsp &nbsp - Click mydomain.com <br>
-    &nbsp &nbsp - Click Computers <br> 
+    &nbsp &nbsp - Click Computers <br> <br>
   </p>
+
+  <hr>
 
   
 
