@@ -270,7 +270,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Log out of DC-1 <br>
     &nbsp &nbsp - Bring up Remote Desktop connnection <br>
     &nbsp &nbsp - Enter DC-1's public IP address <br>
-    &nbsp &nbsp - Login with (domain name\admin account) <br>  
+    &nbsp &nbsp - Login with (domain name\admin account) <br>  <br>
   </p>
 
   <hr>
@@ -286,7 +286,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
  </p>
 
   <p>
-    17. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address: <br>
+    16. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address: <br>
     &nbsp &nbsp - Go to the Azure portal <br>
     &nbsp &nbsp - Go to Virtual machines, then DC-1 <br>
     &nbsp &nbsp - Click Networking <br>
@@ -302,7 +302,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   <hr>
   
   <p>
-    18. From the Azure portal, restart Client-1: <br>
+    17. From the Azure portal, restart Client-1: <br>
     &nbsp &nbsp - Go to Virtual Machines, Client-1 <br>
     &nbsp &nbsp - Click Restart <br> <br>
   </p>
@@ -323,7 +323,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   
 
   <p> 
-    19. Login to Client-1 and join it to the domain: <br>
+    18. Login to Client-1 and join it to the domain: <br>
     &nbsp &nbsp - Login to Client-1 using Remote Desktop connection <br>
     &nbsp &nbsp - Go to command line, then enter ipconfig /all <br>
     &nbsp &nbsp - Next to DNS Servers should be DC-1's private IP address <br>
@@ -333,7 +333,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     &nbsp &nbsp - Click Change <br>
     &nbsp &nbsp - Click Domain, then type your domain name, click OK <br>
     &nbsp &nbsp - Enter the username and password of the admin account you created previously eg mydomain.com\werner_admin <br>
-    &nbsp &nbsp - The computer will restart <br>   
+    &nbsp &nbsp - The computer will restart <br> <br>  
   </p>
 
   <hr>
@@ -342,7 +342,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     <img src="https://i.imgur.com/2MNTnjJ.png" height="80%" width="80%" alt="Log in as admin"/>
   </p>
   <p>
-    20. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container: <br>
+    19. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container: <br>
     &nbsp &nbsp - Login to DC-1 <br>
     &nbsp &nbsp - Click Start <br>
     &nbsp &nbsp - Type and select Acive Directory Users and Computers <br>
@@ -363,7 +363,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   </p>
 
   <p>
-    22. Log into Client-1 as (domain name\admin user) and open system properties: <br>
+    20. Log into Client-1 as (domain name\admin user) and open system properties: <br>
     &nbsp &nbsp - Open Remote desktop and log into Client-1 as (domain name\admin user) <br>
     &nbsp &nbsp - Right click the Start menu <br>
     &nbsp &nbsp - Click Systems <br>
@@ -382,13 +382,13 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   </p>
 
   <p>
-    27. Login to DC-1 as an admin account eg werner_admin <br> <br>
+    21. Login to DC-1 as an admin account eg werner_admin <br> <br>
   </p>
 
   <hr>
 
   <p>
-    28. Open PowerShell ISE as an administrator: <br>
+    22. Open PowerShell ISE as an administrator: <br>
     &nbsp &nbsp - Click Start, type PowerShell ISE <br>
     &nbsp &nbsp - Right click Windows PowerShell ISE <br>
     &nbsp &nbsp - Click Run as administrator <br> <br>
@@ -397,7 +397,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   <hr>
   
   <p>
-    29. Create a new File and paste the contents of the script into it: <br>
+    23. Create a new File and paste the contents of the script into it: <br>
     &nbsp &nbsp - Click New Script <br>
     &nbsp &nbsp - Copy and paste the contents of the link below into the script <br>
     &nbsp &nbsp  https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig <br> <br> <br>
@@ -410,7 +410,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   </p>
 
   <p>
-    30. Run the script and observe the accounts being created <br>
+    24. Run the script and observe the accounts being created <br>
     &nbsp &nbsp - Click Green button to Run script <br> <br>
   </p>
 
@@ -421,7 +421,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   </p>
 
   <p>
-    31. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br> <br>
+    25. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br> <br>
   </p>
 
   <hr>
@@ -431,7 +431,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   </p>
 
   <p>
-    32. Attempt to log into Client-1 with one of the accounts created from the script (make a note of the password in the script: <br>
+    26. Attempt to log into Client-1 with one of the accounts created from the script (make a note of the password in the script: <br>
     &nbsp &nbsp - Login in the context of a domain (domain name\account name) <br>
   </p>
     
