@@ -28,9 +28,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
 <h3>(Setup Resources in Azure)</h3>
 </p>
 
-<p>
-<img src="https://i.imgur.com/rYo77aO.png" height="80%" width="80%" alt="Creating DC"/>
-</p>
+
   
   <p>
   1. Create the Domain Controller VM named DC-1:<br>
@@ -48,6 +46,10 @@ This tutorial outlines how to deploy Active Directory and create users<br />
   &nbsp &nbsp - Wait until deployment is complete, then move on to the next step
   </p>
 <br> 
+
+<p>
+<img src="https://i.imgur.com/rYo77aO.png" height="60%" width="60%" alt="Creating DC"/>
+</p>
 
 <hr>
 
