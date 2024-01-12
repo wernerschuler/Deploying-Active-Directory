@@ -231,7 +231,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     13. Create an admin account: <br>
     &nbsp &nbsp - Go to the _ADMINS OU you created <br>
     &nbsp &nbsp - Right click, New, User <br>
-    &nbsp &nbsp - Give the accout a name <br>
+    &nbsp &nbsp - Give the account a name <br>
     &nbsp &nbsp - I would recommend the login name have the word 'admin' in eg werner_admin <br>
     &nbsp &nbsp - Click Next <br>
     &nbsp &nbsp - Add a password <br>
