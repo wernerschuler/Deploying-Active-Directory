@@ -345,7 +345,7 @@ This tutorial outlines how to deploy Active Directory and create users<br />
     19. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container: <br>
     &nbsp &nbsp - Login to DC-1 <br>
     &nbsp &nbsp - Click Start <br>
-    &nbsp &nbsp - Type and select Acive Directory Users and Computers <br>
+    &nbsp &nbsp - Type and select Active Directory Users and Computers <br>
     &nbsp &nbsp - Click mydomain.com <br>
     &nbsp &nbsp - Click Computers <br> <br>
   </p>
