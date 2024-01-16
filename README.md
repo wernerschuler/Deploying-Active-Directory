@@ -48,31 +48,20 @@ Setup Resources in Azure
     
   - Click Review + create --> Once validation is finished click Create 
   - Wait until deployment is complete, then move on to the next step
-
-  
-  
+  -   
 <br> 
+ 
+  **2. Set DC-1's NIC Private IP address to static:** 
+  - Go to Virtual machines --> DC-1 --> Under Settings click Networking --> Click the link that is next to Network Interface (Image below)
 
-<hr>
+    <img src="https://i.imgur.com/eu2h84a.png" height="70%" width="70%" alt="Creating Client"/>
+     
+  - Under Settings click IP configurations --> ipconfig1 --> Under Private IP address settings, select Static --> Save
 
-<p>
-<img src="https://i.imgur.com/fPGBzj5.png" height="80%" width="80%" alt="Creating DC"/>
-</p> <br>
+    <img src="https://i.imgur.com/RucRQvC.png" height="70%" width="70%" alt="Creating Client"/>
   
- <p>
-  2. Set the Domain Controller's NIC Private IP address to static: <br>
-  &nbsp &nbsp - Go to Virtual machines <br>
-  &nbsp &nbsp - Click DC-1 <br>
-  &nbsp &nbsp - Under Settings click Networking <br>
-  &nbsp &nbsp - Click the link that is next to Network Interface <br> 
-  &nbsp &nbsp - Under Settings click IP configurations <br>
-  &nbsp &nbsp - Click ipconfig1 <br>
-  &nbsp &nbsp - Under Private IP address settings, select Static <br>
-  &nbsp &nbsp - Click Save </p>
 
 <br>
-
-<hr>
 
  <p>
 <img src="https://i.imgur.com/rMHyR5X.png" height="80%" width="80%" alt="Creating Client"/>
