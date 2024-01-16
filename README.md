@@ -130,88 +130,63 @@ Install Active Directory
  - Features: Next
  - AD DS: Next
  - Confirmation: Install
+ - Screenshot below is the final installation screen
+
+<img src="https://i.imgur.com/FfvG8mJ.png" height="50%" width="60%" alt="Creating Client"/>
  
+**9. Promote as a Domain controller:**
+ - Top right corner of the screen there is a yellow exclamation symbol. Click this symbol --> Promote this server to a domain controller
+
+ <img src="https://i.imgur.com/twBhGZa.png" height="70%" width="70%" alt="Creating Client"/> 
+   
+ - Check Add a new forest
+ - Root domain name: mydomain.com (or whatever domain you choose) --> Next
+ - Add a password --> Next
+ - DNS Options: Next
+ - Addtional Options: Next
+ - Paths: Next
+ - Prerequisites Check: Install
+ - Once completed DC-1 will restart
   
+**10. Log back into DC-1 as the user (domain name\username):**
+  - In Azure portal Refresh DC-1
+    
+    <img src="https://i.imgur.com/l0645bI.png" height="70%" width="70%" alt="Creating Client"/>
+    
+  - Log back into DC-1 as (domain name\username) <br> <br>
+
+Create an Admin and Normal User Account in Active Directory
+-- 
+
+**11. In Active Directory Users and Computers (ADUC), create an Organisational Unit (OU) called _EMPLOYEES**
+ - In DC-1 
+ - Click Start --> Enter 'Active Directory Users and Computers
+ - In the domain you created --> Right click --> New --> Organizational Unit --> _EMPLOYEES
+ 
+**12. Create an Organisational Unit named _ADMINS**
+ - In ADUC
+ - In your domain --> Right click --> New --> Organizational Unit --> _ADMINS
+ - Once both OU has been created should look like the image below
+
+<img src="https://i.imgur.com/bhCEGLP.png" height="70%" width="70%" alt="Creating Client"/>
+   
+**13. Create an admin account:**
+ - Go to the _ADMINS OU you created --> Right click --> New --> User 
+ - Give the account a name and login name --> Next
+
+<img src="https://i.imgur.com/nJwr0bl.png" height="50%" width="60%" alt="Creating Client"/>
+    
+ - Add a password --> Next --> Finish
+
+ 
+
+  **14. Add the account you created previously to the Domain Admins Security Group:**
+   - Right click the account you made --> Properties --> Member of --> Add --> Type domain admins --> Check Names --> OK --> Apply -- OK
+
+     <img src="https://i.imgur.com/KdPfaBt.png" height="50%" width="50%" alt="Creating Client"/>
+   
   
 
-  <p>
-    9. Promote as a Domain controller: <br>
-    &nbsp &nbsp - Top right corner of the screen there is a yellow exclamation symbol. Click this symbol, then click Promote this server to a domain controller <br>
-    &nbsp &nbsp - Click Add a new forest <br>
-    &nbsp &nbsp - Add a root domain name, then click Next <br>
-    &nbsp &nbsp - Add a password, then click Next <br>
-    &nbsp &nbsp - At DNS Options, click Next <br>
-    &nbsp &nbsp - At Additional Options, click Next <br>
-    &nbsp &nbsp - Click Next until it gives you the option to Install <br> 
-  </p> <br>
-
-  <hr>
-
-  <p>
-    10. Restart and then log back into DC-1 as the user (domain name\username): <br>
-    &nbsp &nbsp - Restart DC-1 VM <br>
-    &nbsp &nbsp - In Azure portal Refresh DC-1 <br>
-    &nbsp &nbsp - Log back into DC-1 as (domain name\username) <br> <br>
-  </p>
-
-  <hr>
-
-  <p>
-    <h3>(Create an Admin and Normal User Account in AD)</h3>
-    11. In Active Directory Users and Computers (ADUC), create an Organisational Unit (OU) called _EMPLOYEES <br>
-    &nbsp &nbsp - In DC-1 <br>
-    &nbsp &nbsp - Click Start <br>
-    &nbsp &nbsp - Type and go to Active Directory Users and Computers <br>
-    &nbsp &nbsp - In the domain you created <br>
-    &nbsp &nbsp - Right click, New, Organizational Unit <br>
-    &nbsp &nbsp - Give it a name of _EMPLOYEES <br> <br>
-  </p>
-
-  <hr>
-
-  <p>
-    <img src="https://i.imgur.com/Cajormq.png" height="80%" width="80%" alt="Creating OU"/>
-  </p> 
-
-  <p> 
-   12. Create an Organisational Unit named _ADMINS <br> <br>
-  </p>
-
-  <hr>
-
-  <p>
-    13. Create an admin account: <br>
-    &nbsp &nbsp - Go to the _ADMINS OU you created <br>
-    &nbsp &nbsp - Right click, New, User <br>
-    &nbsp &nbsp - Give the account a name <br>
-    &nbsp &nbsp - I would recommend the login name have the word 'admin' in eg werner_admin <br>
-    &nbsp &nbsp - Click Next <br>
-    &nbsp &nbsp - Add a password <br>
-    &nbsp &nbsp - Usually would tick 'User must change password at next login' but for now tick 'Password never expires' <br>
-    &nbsp &nbsp - Click Next <br>
-    &nbsp &nbsp - Click Finish <br> <br>
-  </p>
-
-  <hr>
-  
-  <p>
-   <img src="https://i.imgur.com/jGdK7oP.png" height="80%" width="80%" alt="Creating 
-    OU"/> <br>
-  </p> 
-
-  <p>
-    14. Add the account you made previously to the Domain Admins Security Group: <br>
-    &nbsp &nbsp - Right click the account you made<br>
-    &nbsp &nbsp - Click Properties <br>
-    &nbsp &nbsp - Go to Member of <br>
-    &nbsp &nbsp - Click Add <br>
-    &nbsp &nbsp - Type domain admins, then click Check Names <br>
-    &nbsp &nbsp - Click Domain Admins <br>
-    &nbsp &nbsp - Click OK <br>
-    &nbsp &nbsp - Click Apply, then OK <br> <br> 
-  </p>
-
-  <hr>
 
    <p>
    <img src="https://i.imgur.com/Ac7IbTV.png" height="80%" width="80%" alt="Log in as admin"/>
