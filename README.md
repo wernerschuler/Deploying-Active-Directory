@@ -88,34 +88,21 @@ Setup Resources in Azure
    - Go to Virtual machines --> DC-1 --> Look under 'Virtual network/subnet' --> Client-1 --> Look under 'Virtual network/subnet'
    <img src="https://i.imgur.com/g3AILcD.png" height="80%" width="80%" alt="Creating Client"/>
     
-   
   
+  **5. Login to Client-1 with Remote Desktop Connection and ping DC-1's private IP address:**
+   - In Azure copy Client-1's public IP address
+   - Click Start --> Enter Remote Desktop Connection --> Paste Client-1's IP address --> More choices --> Use a different account
+   - Enter the username and password you created for Client-1
 
+     <img src="https://i.imgur.com/9H8qwy3.png" height="50%" width="50%" alt="Creating Client"/>
+
+   - Go to Azure portal and copy DC-1's private IP address
+
+     <img src="https://i.imgur.com/fjYNj77.png" height="70%" width="70%" alt="Creating Client"/>
+    
+   - From Client-1 click Start --> Enter 'cmd' --> Enter ping -t (paste DC-1's private IP address). In my example: ping -t 10.0.0.4
+   - You should get 'Request timed out.' 
   
-  
-
-
-
-  <p>
-    5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
-    &nbsp &nbsp - Click Start <br>
-    &nbsp &nbsp - Search Remote Desktop Connection <br>
-    &nbsp &nbsp - Enter the public IP address of Client-1 <br>
-    &nbsp &nbsp - Click More choices <br>
-    &nbsp &nbsp - Click Use a different account <br>
-    &nbsp &nbsp - Enter the username and password you created for Client-1 <br>
-    &nbsp &nbsp - Go to Azure portal and copy DC-1's private IP address <br>
-    &nbsp &nbsp - From Client-1 VM click Start <br>
-    &nbsp &nbsp - Enter cmd, then click Open <br>
-    &nbsp &nbsp - Enter ping -t (paste DC-1's private IP address), then press Enter <br>
-    &nbsp &nbsp - You should get 'Request timed out.' <br><br>
-  </p>
-
-  <hr>
-  
-  
-  
-
    <p>
      <img src="https://i.imgur.com/noj8rzI.png" height="80%" width="80%" alt="Creating Client"/>
    </p> 
