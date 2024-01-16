@@ -206,37 +206,16 @@ Join Client-1 to your domain
 
   <img src="https://i.imgur.com/9LlaVaj.png" height="70%" width="70%" alt="Creating Client"/>
     
-
-   
-   
-
-
-  <hr>
+  **17. From the Azure portal, restart Client-1:**
+   - Go to Virtual Machines, Client-1 --> Restart
   
-  <p>
-    17. From the Azure portal, restart Client-1: <br>
-    &nbsp &nbsp - Go to Virtual Machines, Client-1 <br>
-    &nbsp &nbsp - Click Restart <br> <br>
-  </p>
-
-  <hr>
-
-  <p>
-   <img src="https://i.imgur.com/UjIuuqi.png" height="80%" width="80%" alt="Log in as admin"/> <br>
-  </p>
-  
-  <p>
-   <img src="https://i.imgur.com/E2Bbvvi.png" height="80%" width="80%" alt="Log in as admin"/> <br>
-  </p>
-  
-  <p>
-   <img src="https://i.imgur.com/86jJAqp.png" height="80%" width="80%" alt="Log in as admin"/> <br>
-  </p>
-  
-
-  <p> 
-    18. Login to Client-1 and join it to the domain: <br>
-    &nbsp &nbsp - Login to Client-1 using Remote Desktop connection <br>
+  **18. Login to Client-1 and join it to the domain:**
+    - Login to Client-1 using Remote Desktop connection
+    - Start --> cmd --> ipconfig /all 
+    - Next to DNS Servers should be DC-1's private IP address
+    
+    <img src="https://i.imgur.com/3DhboEO.png" height="70%" width="70%" alt="Creating Client"/>
+    
     &nbsp &nbsp - Go to command line, then enter ipconfig /all <br>
     &nbsp &nbsp - Next to DNS Servers should be DC-1's private IP address <br>
     &nbsp &nbsp - Right click Start <br>
