@@ -103,36 +103,21 @@ Setup Resources in Azure
    - From Client-1 click Start --> Enter 'cmd' --> Enter ping -t (paste DC-1's private IP address). In my example: ping -t 10.0.0.4
    - You should get 'Request timed out.' 
   
-   <p>
-     <img src="https://i.imgur.com/noj8rzI.png" height="80%" width="80%" alt="Creating Client"/>
-   </p> 
 
-  <p>
-    6. Login to the Domain Controller and enable ICMPv4 in the local windows Firewall: <br>
-    &nbsp &nbsp - Go to the Azure portal <br>
-    &nbsp &nbsp - Copy DC-1's public IP address <br>
-    &nbsp &nbsp - Open another instance of Remote Desktop Connection <br>
-    &nbsp &nbsp - Paste DC-1's IP address and click Connect <br>
-    &nbsp &nbsp - Click More choices <br>
-    &nbsp &nbsp - Click Use a different account <br>
-    &nbsp &nbsp - Enter the username and password you created for DC-1 <br>
-    &nbsp &nbsp - Click Start <br>
-    &nbsp &nbsp - Type firewall, then select Windows Defender Firewall with Advanced Security <br>
-    &nbsp &nbsp - Click Inbound Rules <br>
-    &nbsp &nbsp - Click Protocol <br>
-    &nbsp &nbsp - Under Protocol look for ICMPv4 <br>
-    &nbsp &nbsp - Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In) <br> <br>
-  </p>
+  **6. Login to DC-1 and enable ICMPv4 in the local windows Firewall:**
+   - Go to the Azure portal --> Copy DC-1's public IP address --> Open another instance of Remote Desktop Connection --> Paste DC-1's IP address and click Connect --> Enter username and password for DC-1
+   - In DC-1 --> Start --> Enter Windows Defender Firewall with Advanced Security
+   - Click Inbound Rules --> Protocol --> Under Protocol look for ICMPv4 --> Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)
 
-  <hr>
+     <img src="https://i.imgur.com/HaaBEgt.png" height="80%" width="80%" alt="Creating Client"/>
+ 
   
-   <p>
-    7. Check back at Client-1 to see the ping succeed: <br>
-    &nbsp &nbsp - Go back to Client-1 and check to see if the ping to DC-1 is now working <br>
-    &nbsp &nbsp - Press Ctrl + C to stop the ping <br>  <br>
-  </p>
+  **7. Check back at Client-1 to see the ping succeed:**
+   - Go back to Client-1 and check to see if the ping to DC-1 is now working 
+   - Press Ctrl + C to stop the ping
 
-  <hr>
+
+
 
   <h3>(Install Active Directory)</h3>
   
