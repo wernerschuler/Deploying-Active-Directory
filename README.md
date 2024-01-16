@@ -120,16 +120,18 @@ Install Active Directory
 -- 
 
 **8. Login to DC-1 and install Active Directory Domain Services:**
- - In DC-1 -->
-    &nbsp &nbsp - If not already, login to DC-1 using Remote Desktop Connection <br>
-    &nbsp &nbsp - If Server Manager is not already opened, click Start and click Server Manager <br>
-    &nbsp &nbsp - Click Add roles and features <br>
-    &nbsp &nbsp - Click Next <br>
-    &nbsp &nbsp - For Installation Type click Next <br>
-    &nbsp &nbsp - For Server Selection make sure that DC-1 is highlighted then click Next <br>
-    &nbsp &nbsp - For Server Roles check Active Directory Domain Services, click Add Features, then click Next <br>
-    &nbsp &nbsp - For AD DS click Next <br>
-    &nbsp &nbsp - Click Install <br>  <br>
+ - In DC-1
+ - Start --> Server Manager
+ - Add roles and features
+   -Before You Begin: Next
+   -Installation Type: Check Role-based or feature-based installation --> Next
+   -Server Selection: DC-1 --> Next
+   -Server Roles: Check Active Directory Domain Services --> Add Features --> Next
+   -Features: Next
+   -AD DS: Next
+   -Confirmation: Install
+ 
+  
   
 
   <p>
