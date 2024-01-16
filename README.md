@@ -180,51 +180,36 @@ Create an Admin and Normal User Account in Active Directory
 
  
 
-  **14. Add the account you created previously to the Domain Admins Security Group:**
-   - Right click the account you made --> Properties --> Member of --> Add --> Type domain admins --> Check Names --> OK --> Apply -- OK
+ **14. Add the account you created previously to the Domain Admins Security Group:**
+  - Right click the account you made --> Properties --> Member of --> Add --> Type domain admins --> Check Names --> OK --> Apply -- OK
 
-     <img src="https://i.imgur.com/KdPfaBt.png" height="50%" width="50%" alt="Creating Client"/>
+  <img src="https://i.imgur.com/KdPfaBt.png" height="50%" width="50%" alt="Creating Client"/>
    
-  
+   
+  **15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account):**
+   - Log out of DC-1 --> Bring up Remote Desktop connnection --> Enter DC-1's public IP address --> Login with (domain name\admin account)
+   - For example mydomain.com\werner_admin
+    
+Join Client-1 to your domain
+-- 
 
+**16. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address:**
+ - Go to the Azure portal --> Virtual machines --> DC-1 --> Networking --> Next to NIC Private IP, copy this address
 
-   <p>
-   <img src="https://i.imgur.com/Ac7IbTV.png" height="80%" width="80%" alt="Log in as admin"/>
-   </p>
+  <img src="https://i.imgur.com/HEPUjd1.png" height="70%" width="70%" alt="Creating Client"/>
 
-  <p>
-    15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account): <br>
-    &nbsp &nbsp - Log out of DC-1 <br>
-    &nbsp &nbsp - Bring up Remote Desktop connnection <br>
-    &nbsp &nbsp - Enter DC-1's public IP address <br>
-    &nbsp &nbsp - Login with (domain name\admin account) <br>  <br>
-  </p>
+  - Go to Virtual machines --> Client-1 --> Networking --> Click the link next to 'Network Interface'
 
-  <hr>
+  <img src="https://i.imgur.com/rz9UYIQ.png" height="70%" width="70%" alt="Creating Client"/>
 
-  <h3>(Join Client-1 to your domain)</h3>
-  
-  <p>
-   <img src="https://i.imgur.com/ezOqQxR.png" height="80%" width="80%" alt="Log in as admin"/> <br> <br>
-  </p>
+  - Under Settings, click DNS Servers --> Custom --> Paste DC-1's private IP address under DNS server --> Save
 
- <p>
-  <img src="https://i.imgur.com/rBQmVfm.png" height="80%" width="80%" alt="Log in as admin"/>
- </p>
+  <img src="https://i.imgur.com/9LlaVaj.png" height="70%" width="70%" alt="Creating Client"/>
+    
 
-  <p>
-    16. From the Azure portal, set Client-1's DNS settings to the DC's Private IP address: <br>
-    &nbsp &nbsp - Go to the Azure portal <br>
-    &nbsp &nbsp - Go to Virtual machines, then DC-1 <br>
-    &nbsp &nbsp - Click Networking <br>
-    &nbsp &nbsp - Next to NIC Private IP, copy this address <br>
-    &nbsp &nbsp - Go the virtual machines, then Client-1 <br>
-    &nbsp &nbsp - Click Networking <br>
-    &nbsp &nbsp - Click the link next to 'Network Interface' <br>
-    &nbsp &nbsp - Under Settings, click DNS Servers <br>
-    &nbsp &nbsp - Click Custom <br>
-    &nbsp &nbsp - Paste DC-1's private IP address under DNS server, then click Save <br> <br>
-  </p>
+   
+   
+
 
   <hr>
   
