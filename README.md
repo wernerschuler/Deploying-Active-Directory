@@ -24,29 +24,33 @@ This tutorial outlines how to deploy Active Directory and create users<br />
 
 <h2>Steps</h2>
 
-<p>
-<h3>(Setup Resources in Azure)</h3>
-</p>
 
-<p>
-<img src="https://i.imgur.com/rYo77aO.png" height="80%" width="80%" alt="Creating DC"/>
-</p>
+Setup Resources in Azure
+-- 
+
   
-  <p>
-  1. Create the Domain Controller VM named DC-1:<br>
-  &nbsp &nbsp - Go to portal.azure.com <br>
-  &nbsp &nbsp - Virtual machines <br>
-  &nbsp &nbsp - Click Create, then Azure virtual machine <br>
-  &nbsp &nbsp - Create a Resource group <br>
-  &nbsp &nbsp - Give the VM a name of DC-1 <br>
-  &nbsp &nbsp - Set your region <br>
-  &nbsp &nbsp - Set Image to Windows Server 2022 <br>
-  &nbsp &nbsp - Set Size to 2 vcpu or more <br>
-  &nbsp &nbsp - Enter a username and password <br>
-  &nbsp &nbsp - Click Review + create <br>
-  &nbsp &nbsp - Once validation is finished click Create <br>
-  &nbsp &nbsp - Wait until deployment is complete, then move on to the next step
-  </p>
+  **1. Create the Domain Controller VM named DC-1:**
+  - Go to portal.azure.com --> Virtual machines --> Create, then Azure virtual machine
+  - Create a Resource group 
+  - Give the VM a name of DC-1 
+  - Set your region 
+  - Set Image to Windows Server 2022 
+  - Set Size to 2 vcpu or more 
+  - Enter a username and password
+  - Check the box that says 'I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights.'
+
+  <img src="https://i.imgur.com/Vg5blOJ.png" height="50%" width="50%" alt="Creating DC"/>
+    
+  - Click Next until you get to Networking page --> Check that a Virtual Network has been created and make a note of the name of it
+  - In the example below a Virtual network called 'DC-1-vnet' is created
+
+  <img src="https://i.imgur.com/eyUSnYX.png" height="50%" width="50%" alt="Creating DC"/>
+    
+  - Click Review + create --> Once validation is finished click Create 
+  - Wait until deployment is complete, then move on to the next step
+
+  
+  
 <br> 
 
 <hr>
