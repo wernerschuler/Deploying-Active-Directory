@@ -62,8 +62,6 @@ Setup Resources in Azure
   
 
 <br>
-
-
   
   **3. Create the Client-1 VM (virtual machine):**
   - Go to Virtual machines --> Create --> Azure virtual machine 
@@ -85,26 +83,18 @@ Setup Resources in Azure
   - Review + create
   - Once validation has passed --> Create
 
-<hr>
-
-<p>
-<img src="https://i.imgur.com/XW4wARY.png" height="80%" width="80%" alt="Creating Client"/>
-</p> <br> <br>
-
-  <p>
-    4. Ensure both VMs are in the same Vnet: <br>
-    &nbsp &nbsp - Click Virtual machines <br>
-    &nbsp &nbsp - Go to both the VM's that you created <br>
-    &nbsp &nbsp - Under Virtual network/subnet, check that both VMs are in the same Vnet <br> <br> 
-  </p>
-
-  <hr>
   
-  <h3>(Ensure Connectivity between the client and Domain Controller)</h3> <br>
+  **4. Check that DC-1 and Client-1 are in the same virtual network:**
+   - Go to Virtual machines --> DC-1 --> Look under 'Virtual network/subnet' --> Client-1 --> Look under 'Virtual network/subnet'
+   <img src="https://i.imgur.com/g3AILcD.png" height="80%" width="80%" alt="Creating Client"/>
+    
+   
+  
 
-<p>
-<img src="https://i.imgur.com/ioYv7Lj.png" height="80%" width="80%" alt="Creating Client"/>
-</p> 
+  
+  
+
+
 
   <p>
     5. Login to Client-1 with Remote Desktop and ping DC-1's private IP address: <br>
