@@ -46,9 +46,9 @@ Setup Resources in Azure
 
   <img src="https://i.imgur.com/eyUSnYX.png" height="50%" width="50%" alt="Creating DC"/>
     
-  - Click Review + create --> Once validation is finished click Create 
+  - Click Review + create --> Once validation has passed click Create 
   - Wait until deployment is complete, then move on to the next step
-  -   
+      
 <br> 
  
   **2. Set DC-1's NIC Private IP address to static:** 
@@ -63,24 +63,27 @@ Setup Resources in Azure
 
 <br>
 
- <p>
-<img src="https://i.imgur.com/rMHyR5X.png" height="80%" width="80%" alt="Creating Client"/>
-</p> 
 
-  <p>
-  3. Create the Client VM:<br>
-  &nbsp &nbsp - Go to Virtual machines <br>
-  &nbsp &nbsp - Click Create, then Azure virtual machine <br>
-  &nbsp &nbsp - Use the same resource group that was created in step 1 <br>
-  &nbsp &nbsp - Name the VM Client-1 <br>
-  &nbsp &nbsp - Set the same region as DC-1 <br>
-  &nbsp &nbsp - Set the Image to Windows 10 <br>
-  &nbsp &nbsp - Set Size to 2 vcpus or more <br>
-  &nbsp &nbsp - Set the username and password <br>
-  &nbsp &nbsp - Click Next until you get to Networking <br>
-  &nbsp &nbsp - Use the same Virtual network that was created in step 1 <br>
-  &nbsp &nbsp - Click Review + create <br>
-  &nbsp &nbsp - Click Create <br><br> <br></p>
+  
+  **3. Create the Client-1 VM (virtual machine):**
+  - Go to Virtual machines --> Create --> Azure virtual machine 
+  - Use the same resource group that was created in step 1
+  - Name the VM Client-1
+  - Set the same region as DC-1
+  - Set the Image to Windows 10
+  - Set Size to 2 vcpus or more
+  - Add the username and password
+  - Check the box that says 'I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights.'
+
+  <img src="https://i.imgur.com/Xk6sEVx.png" height="50%" width="50%" alt="Creating Client"/>
+    
+  - Click Next until you get to the Networking page
+  - Make sure the Virtual network is set as the same virtual network created for DC-1. In this case it's DC-1-vnet
+
+  <img src="https://i.imgur.com/oHVilFE.png" height="50%" width="50%" alt="Creating Client"/>
+  
+  - Review + create
+  - Once validation has passed --> Create
 
 <hr>
 
