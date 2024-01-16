@@ -116,17 +116,11 @@ Setup Resources in Azure
    - Go back to Client-1 and check to see if the ping to DC-1 is now working 
    - Press Ctrl + C to stop the ping
 
+Install Active Directory
+-- 
 
-
-
-  <h3>(Install Active Directory)</h3>
-  
-  <p>
-    <img src="https://i.imgur.com/iC8sgPC.png" height="80%" width="80%" alt="Creating Client"/>
-  </p>  
-
-  <p>
-    8. Login to DC-1 and install Active Directory Domain Services: <br>
+**8. Login to DC-1 and install Active Directory Domain Services:**
+ - In DC-1 -->
     &nbsp &nbsp - If not already, login to DC-1 using Remote Desktop Connection <br>
     &nbsp &nbsp - If Server Manager is not already opened, click Start and click Server Manager <br>
     &nbsp &nbsp - Click Add roles and features <br>
@@ -136,9 +130,7 @@ Setup Resources in Azure
     &nbsp &nbsp - For Server Roles check Active Directory Domain Services, click Add Features, then click Next <br>
     &nbsp &nbsp - For AD DS click Next <br>
     &nbsp &nbsp - Click Install <br>  <br>
-  </p>
-
-  <hr>
+  
 
   <p>
     9. Promote as a Domain controller: <br>
