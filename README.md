@@ -123,13 +123,13 @@ Install Active Directory
  - In DC-1
  - Start --> Server Manager
  - Add roles and features
-   -Before You Begin: Next
-   -Installation Type: Check Role-based or feature-based installation --> Next
-   -Server Selection: DC-1 --> Next
-   -Server Roles: Check Active Directory Domain Services --> Add Features --> Next
-   -Features: Next
-   -AD DS: Next
-   -Confirmation: Install
+ - Before You Begin: Next
+ - Installation Type: Check Role-based or feature-based installation --> Next
+ - Server Selection: DC-1 --> Next
+ - Server Roles: Check Active Directory Domain Services --> Add Features --> Next
+ - Features: Next
+ - AD DS: Next
+ - Confirmation: Install
  
   
   
