@@ -240,35 +240,22 @@ Join Client-1 to your domain
   
   <img src="https://i.imgur.com/qNi9X2a.png" height="65%" width="65%" alt="Log in as admin"/>
   
-
-
-  <p>
-    <h3>(Create many additional users and attempt to log into Client-1 with one of the users)</h3> <br>
-  </p>
-
-  <p>
-    21. Login to DC-1 as an admin account eg werner_admin <br> <br>
-  </p>
-
-  <hr>
-
-  <p>
-    22. Open PowerShell ISE as an administrator: <br>
-    &nbsp &nbsp - Click Start, type PowerShell ISE <br>
-    &nbsp &nbsp - Right click Windows PowerShell ISE <br>
-    &nbsp &nbsp - Click Run as administrator <br> <br>
-  </p>
-
-  <hr>
+Create many additional users and attempt to log into Client-1 with one of the users
+-- 
+ 
+**21. Login to DC-1 as an admin account**
   
-  <p>
-    23. Create a new File and paste the contents of the script into it: <br>
-    &nbsp &nbsp - Click New Script <br>
-    &nbsp &nbsp - Copy and paste the contents of the link below into the script <br>
-    &nbsp &nbsp  https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig <br> <br> <br>
-  </p>
+**22. Open PowerShell ISE as an administrator:**
+ - Start --> Type 'Powershell ISE' --> Right click --> Run as administrator
 
-  <hr>
+**23. Create a new File and paste the contents of the script into it:**
+ - Click New Script (White symbol in the top left hand corner)
+ - Copy and paste the contents of this link into the script: https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig 
+
+  
+
+
+  <
 
   <p>
     <img src="https://i.imgur.com/ZLLSOXT.png" height="80%" width="80%" alt="Log in as admin"/>
