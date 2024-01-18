@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>Active Directory Deployment</h1>
+<h1>Active Directory Deployment in the Cloud (Azure)</h1>
 
 <h2>Environments and Technologies Used</h2>
 
@@ -19,7 +19,6 @@
 
 Setup Resources in Azure
 -- 
-
   
   **1. Create the Domain Controller VM named DC-1:**
   - Go to portal.azure.com --> Virtual machines --> Create, then Azure virtual machine
