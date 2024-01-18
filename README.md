@@ -233,35 +233,14 @@ Join Client-1 to your domain
 
 <img src="https://i.imgur.com/Ez8b7Rk.png" height="40%" width="50%" alt="Creating Client"/>
   
+ **20. Login to Client-1 as (domain name\admin user) and open system properties:**
+  - Login to Client-1 as (domain name\admin user) using Remote desktop connection
+  - Right click Start --> System --> Remote desktop --> Select users that can remotely access this PC
+  - Add --> Type 'domain users' --> Check Names --> OK
   
+  <img src="https://i.imgur.com/qNi9X2a.png" height="65%" width="65%" alt="Log in as admin"/>
   
 
-  <hr>
-
-  
-
-  <p>
-    <h3>(Setup Remote Desktop for non-administrative users on Client-1)</h3> <br>
-  </p>
-    
-  <p>
-  <img src="https://i.imgur.com/qNi9X2a.png" height="80%" width="80%" alt="Log in as admin"/>
-  </p>
-
-  <p>
-    20. Log into Client-1 as (domain name\admin user) and open system properties: <br>
-    &nbsp &nbsp - Open Remote desktop and log into Client-1 as (domain name\admin user) <br>
-    &nbsp &nbsp - Right click the Start menu <br>
-    &nbsp &nbsp - Click Systems <br>
-    &nbsp &nbsp - Click Remote desktop <br>
-    &nbsp &nbsp - Click Select users that can remotely access this PC <br>
-    &nbsp &nbsp - Click Add <br>
-    &nbsp &nbsp - Type 'domain users' <br>
-    &nbsp &nbsp - Click Check Names <br>
-    &nbsp &nbsp - Click OK <br> <br>
-  </p>
-
-  <hr>
 
   <p>
     <h3>(Create many additional users and attempt to log into Client-1 with one of the users)</h3> <br>
