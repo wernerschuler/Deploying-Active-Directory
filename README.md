@@ -260,19 +260,20 @@ Create many additional users and attempt to log into Client-1 with one of the us
 **25. Open ADUC and observe the accounts in the _EMPLOYEES OU:**
     
 <img src="https://i.imgur.com/idcs1CJ.png" height="60%" width="60%" alt="Log in as admin"/>
+
+**26. Login to Client-1 with one of the accounts created from the script:
+ - **Note:** Password is Password1
+
+<img src="https://i.imgur.com/WHvAkU5.png" height="60%" width="60%" alt="Log in as admin"/>
+   
   
 
   
 
-  <p>
-    <img src="https://i.imgur.com/WHvAkU5.png" height="80%" width="80%" alt="Log in as admin"/>
-  </p>
+  
+  
 
-  <p>
-    26. Attempt to log into Client-1 with one of the accounts created from the script (make a note of the password in the script: <br>
-    &nbsp &nbsp - Login in the context of a domain (domain name\account name) <br>
-  </p>
-    
+  
     
     
 
