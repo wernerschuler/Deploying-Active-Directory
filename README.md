@@ -261,7 +261,7 @@ Create many additional users and attempt to log into Client-1 with one of the us
     
 <img src="https://i.imgur.com/idcs1CJ.png" height="60%" width="60%" alt="Log in as admin"/>
 
-**26. Login to Client-1 with one of the accounts created from the script:
+**26. Login to Client-1 with one of the accounts created from the script:**
  - **Note:** Password is Password1
 
 <img src="https://i.imgur.com/WHvAkU5.png" height="60%" width="60%" alt="Log in as admin"/>
