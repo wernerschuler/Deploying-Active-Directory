@@ -3,27 +3,19 @@
 </p>
 
 <h1>Active Directory Deployment</h1>
-This tutorial outlines how to deploy Active Directory and create users<br />
 
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
-- Active Directory Users and Computers
-- PowerShell ISE
+- Active Directory Domain Services
+- PowerShell
+- Command Prompt 
 
 <h2>Operating Systems Used </h2>
 
 - Windows 10</b> (21H2)
 - Windows Server 2022 
-
-<h2>Prerequisites</h2>
-
-- Microsoft Azure subscription
-  
-
-<h2>Steps</h2>
-
 
 Setup Resources in Azure
 -- 
