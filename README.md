@@ -193,7 +193,7 @@ Create an Admin and Normal User Account in Active Directory
 Join Client-1 to your domain
 -- 
 
-**16. From the Azure portal, set Client-1's DNS settings to the DC'1s Private IP address:**
+**16. From the Azure portal, set Client-1's DNS settings to the DC-1's Private IP address:**
  - Go to the Azure portal --> Virtual machines --> DC-1 --> Networking --> Next to NIC Private IP, copy this address
 
   <img src="https://i.imgur.com/HEPUjd1.png" height="70%" width="70%" alt="Creating Client"/>
