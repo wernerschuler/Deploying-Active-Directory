@@ -220,22 +220,20 @@ Join Client-1 to your domain
    - Enter the username and password of your admin account
      - For example: mydomain.com\werner_admin
 
-<img src="https://i.imgur.com/Cf91tUi.png" height="70%" width="70%" alt="Creating Client"/>
+<img src="https://i.imgur.com/0m2JQSF.png" height="40%" width="50%" alt="Creating Client"/>
+
+<img src="https://i.imgur.com/HKDeXoE.png" height="40%" width="50%" alt="Creating Client"/>
+
+<img src="https://i.imgur.com/lVx7bAt.png" height="40%" width="50%" alt="Creating Client"/>
      
     
-   
-   
-  
+  **19. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container:**
+   - Go to DC-1
+   - Start --> Active Directory Users and Computers --> select your domain --> Computers
 
-
- 
+<img src="https://i.imgur.com/Ez8b7Rk.png" height="40%" width="50%" alt="Creating Client"/>
   
-    19. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container: <br>
-    &nbsp &nbsp - Login to DC-1 <br>
-    &nbsp &nbsp - Click Start <br>
-    &nbsp &nbsp - Type and select Active Directory Users and Computers <br>
-    &nbsp &nbsp - Click mydomain.com <br>
-    &nbsp &nbsp - Click Computers <br> <br>
+  
   
 
   <hr>
