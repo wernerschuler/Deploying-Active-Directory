@@ -252,21 +252,10 @@ Create many additional users and attempt to log into Client-1 with one of the us
  - Click New Script (White symbol in the top left hand corner)
  - Copy and paste the contents of this link into the script: https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig 
 
-  
+**24. Run the script and observe the accounts being created:**
+ - Click the Green arrow to run the script (image below)
 
-
-  <
-
-  <p>
-    <img src="https://i.imgur.com/ZLLSOXT.png" height="80%" width="80%" alt="Log in as admin"/>
-  </p>
-
-  <p>
-    24. Run the script and observe the accounts being created <br>
-    &nbsp &nbsp - Click Green button to Run script <br> <br>
-  </p>
-
-  <hr>
+<img src="https://i.imgur.com/OzUBskO.png" height="60%" width="60%" alt="Log in as admin"/>
 
   <p>
     <img src="https://i.imgur.com/idcs1CJ.png" height="80%" width="80%" alt="Log in as admin"/>
