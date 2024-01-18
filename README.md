@@ -210,36 +210,33 @@ Join Client-1 to your domain
    - Go to Virtual Machines, Client-1 --> Restart
   
   **18. Login to Client-1 and join it to the domain:**
-    - Login to Client-1 using Remote Desktop connection
-    - Start --> cmd --> ipconfig /all 
-    - Next to DNS Servers should be DC-1's private IP address
+   - Login to Client-1 using Remote Desktop connection
+   - Start --> cmd --> ipconfig /all
+   - Next to DNS Servers should be DC-1's private IP address
     
-    <img src="https://i.imgur.com/3DhboEO.png" height="70%" width="70%" alt="Creating Client"/>
+     <img src="https://i.imgur.com/3DhboEO.png" height="70%" width="70%" alt="Creating Client"/>
+
+   - Right click Start --> System --> Rename this PC (advanced) --> Change --> Domain --> Type your domain name --> OK
+   - Enter the username and password of your admin account
+     - For example: mydomain.com\werner_admin
+
+<img src="https://i.imgur.com/Cf91tUi.png" height="70%" width="70%" alt="Creating Client"/>
+     
     
-    &nbsp &nbsp - Go to command line, then enter ipconfig /all <br>
-    &nbsp &nbsp - Next to DNS Servers should be DC-1's private IP address <br>
-    &nbsp &nbsp - Right click Start <br>
-    &nbsp &nbsp - Click System <br>
-    &nbsp &nbsp - Click Rename this PC (advanced) <br>
-    &nbsp &nbsp - Click Change <br>
-    &nbsp &nbsp - Click Domain, then type your domain name, click OK <br>
-    &nbsp &nbsp - Enter the username and password of the admin account you created previously eg mydomain.com\werner_admin <br>
-    &nbsp &nbsp - The computer will restart <br> <br>  
-  </p>
+   
+   
+  
 
-  <hr>
 
-  <p>
-    <img src="https://i.imgur.com/2MNTnjJ.png" height="80%" width="80%" alt="Log in as admin"/>
-  </p>
-  <p>
+ 
+  
     19. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container: <br>
     &nbsp &nbsp - Login to DC-1 <br>
     &nbsp &nbsp - Click Start <br>
     &nbsp &nbsp - Type and select Active Directory Users and Computers <br>
     &nbsp &nbsp - Click mydomain.com <br>
     &nbsp &nbsp - Click Computers <br> <br>
-  </p>
+  
 
   <hr>
 
