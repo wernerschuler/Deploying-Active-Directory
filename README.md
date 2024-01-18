@@ -256,16 +256,13 @@ Create many additional users and attempt to log into Client-1 with one of the us
  - Click the Green arrow to run the script (image below)
 
 <img src="https://i.imgur.com/OzUBskO.png" height="60%" width="60%" alt="Log in as admin"/>
+  
+**25. Open ADUC and observe the accounts in the _EMPLOYEES OU:**
+    
+<img src="https://i.imgur.com/idcs1CJ.png" height="60%" width="60%" alt="Log in as admin"/>
+  
 
-  <p>
-    <img src="https://i.imgur.com/idcs1CJ.png" height="80%" width="80%" alt="Log in as admin"/>
-  </p>
-
-  <p>
-    25. Open ADUC and observe the accounts in the _EMPLOYEES OU: <br> <br>
-  </p>
-
-  <hr>
+  
 
   <p>
     <img src="https://i.imgur.com/WHvAkU5.png" height="80%" width="80%" alt="Log in as admin"/>
