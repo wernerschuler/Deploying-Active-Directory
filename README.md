@@ -30,12 +30,12 @@ Setup Resources in Azure
   - Enter a username and password
   - Check the box that says 'I confirm I have an eligible Windows 10/11 license with multi-tenant hosting rights.'
 
-  <img src="https://i.imgur.com/Vg5blOJ.png" height="50%" width="50%" alt="Creating DC"/>
+  <img src="https://i.imgur.com/Vg5blOJ.png" height="50%" width="50%" alt="Creating Domain controller in Azure"/>
     
   - Click Next until you get to Networking page --> Check that a Virtual Network has been created and make a note of the name of it
   - In the example below a Virtual network called 'DC-1-vnet' is created
 
-  <img src="https://i.imgur.com/eyUSnYX.png" height="50%" width="50%" alt="Creating DC"/>
+  <img src="https://i.imgur.com/eyUSnYX.png" height="50%" width="50%" alt="Creating Domain controller in Azure"/>
     
   - Click Review + create --> Once validation has passed click Create 
   - Wait until deployment is complete, then move on to the next step
@@ -45,11 +45,11 @@ Setup Resources in Azure
   **2. Set DC-1's NIC Private IP address to static:** 
   - Go to Virtual machines --> DC-1 --> Under Settings click Networking --> Click the link that is next to Network Interface (Image below)
 
-    <img src="https://i.imgur.com/eu2h84a.png" height="70%" width="70%" alt="Creating Client"/>
+    <img src="https://i.imgur.com/eu2h84a.png" height="70%" width="70%" alt="Network interface screen"/>
      
   - Under Settings click IP configurations --> ipconfig1 --> Under Private IP address settings, select Static --> Save
 
-    <img src="https://i.imgur.com/RucRQvC.png" height="70%" width="70%" alt="Creating Client"/>
+    <img src="https://i.imgur.com/RucRQvC.png" height="70%" width="70%" alt="Change IP address to static"/>
   
 
 <br>
@@ -69,7 +69,7 @@ Setup Resources in Azure
   - Click Next until you get to the Networking page
   - Make sure the Virtual network is set as the same virtual network created for DC-1. In this case it's DC-1-vnet
 
-  <img src="https://i.imgur.com/oHVilFE.png" height="50%" width="50%" alt="Creating Client"/>
+  <img src="https://i.imgur.com/oHVilFE.png" height="50%" width="50%" alt="Virtual network screen"/>
   
   - Review + create
   - Once validation has passed --> Create
@@ -77,7 +77,7 @@ Setup Resources in Azure
   
   **4. Check that DC-1 and Client-1 are in the same virtual network:**
    - Go to Virtual machines --> DC-1 --> Look under 'Virtual network/subnet' --> Client-1 --> Look under 'Virtual network/subnet'
-   <img src="https://i.imgur.com/g3AILcD.png" height="80%" width="80%" alt="Creating Client"/>
+   <img src="https://i.imgur.com/g3AILcD.png" height="80%" width="80%" alt="Virtual network screen"/>
     
   
   **5. Login to Client-1 with Remote Desktop Connection and ping DC-1's private IP address:**
