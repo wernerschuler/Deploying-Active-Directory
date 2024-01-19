@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/iNhknBe.png" alt="osTicket logo"/>
+<img src="https://i.imgur.com/iNhknBe.png" alt="Active Directory logo"/>
 </p>
 
 <h1>Active Directory Deployment in the Cloud (Azure)</h1>
