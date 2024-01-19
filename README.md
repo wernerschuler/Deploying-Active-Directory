@@ -85,11 +85,11 @@ Setup Resources in Azure
    - Click Start --> Enter Remote Desktop Connection --> Paste Client-1's IP address --> More choices --> Use a different account
    - Enter the username and password you created for Client-1
 
-     <img src="https://i.imgur.com/9H8qwy3.png" height="50%" width="50%" alt="Creating Client"/>
+     <img src="https://i.imgur.com/9H8qwy3.png" height="50%" width="50%" alt="Remote desktop connection login"/>
 
    - Go to Azure portal and copy DC-1's private IP address
 
-     <img src="https://i.imgur.com/fjYNj77.png" height="70%" width="70%" alt="Creating Client"/>
+     <img src="https://i.imgur.com/fjYNj77.png" height="70%" width="70%" alt="DC-1 overview screen"/>
     
    - From Client-1 click Start --> Enter 'cmd' --> Enter ping -t (paste DC-1's private IP address). In my example: ping -t 10.0.0.4
    - You should get 'Request timed out.' 
@@ -100,7 +100,7 @@ Setup Resources in Azure
    - In DC-1 --> Start --> Enter Windows Defender Firewall with Advanced Security
    - Click Inbound Rules --> Protocol --> Under Protocol look for ICMPv4 --> Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)
 
-     <img src="https://i.imgur.com/HaaBEgt.png" height="80%" width="80%" alt="Creating Client"/>
+     <img src="" height="80%" width="80%" alt="Creating Client"/>
  
   
   **7. Check back at Client-1 to see the ping succeed:**
