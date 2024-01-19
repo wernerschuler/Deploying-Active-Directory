@@ -100,7 +100,7 @@ Setup Resources in Azure
    - In DC-1 --> Start --> Enter Windows Defender Firewall with Advanced Security
    - Click Inbound Rules --> Protocol --> Under Protocol look for ICMPv4 --> Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)
 
-     <img src="" height="80%" width="80%" alt="Creating Client"/>
+     <img src="https://i.imgur.com/TcLrFfO.png" height="80%" width="80%" alt="Creating Client"/>
  
   
   **7. Check back at Client-1 to see the ping succeed:**
