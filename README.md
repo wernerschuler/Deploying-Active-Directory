@@ -191,7 +191,8 @@ Join Client-1 to your domain
 
   - Go to Virtual machines --> Client-1 --> Networking --> Click the link next to 'Network Interface'
 
-  <img src="https://i.imgur.com/rz9UYIQ.png" height="70%" width="70%" alt=""DC-1 networking screen in Azure"/>
+<img src="https://i.imgur.com/cZH8DIu.png" height="70%" width="70%" alt="DC-1 networking screen in Azure"/>
+
 
   - Under Settings, click DNS Servers --> Custom --> Paste DC-1's private IP address under DNS server --> Save
 
