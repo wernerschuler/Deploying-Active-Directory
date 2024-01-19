@@ -100,7 +100,7 @@ Setup Resources in Azure
    - In DC-1 --> Start --> Enter Windows Defender Firewall with Advanced Security
    - Click Inbound Rules --> Protocol --> Under Protocol look for ICMPv4 --> Right click and enable 'Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)
 
-     <img src="https://i.imgur.com/TcLrFfO.png" height="80%" width="80%" alt="Creating Client"/>
+     <img src="https://i.imgur.com/TcLrFfO.png" height="80%" width="80%" alt="Inbound rules screen"/>
  
   
   **7. Check back at Client-1 to see the ping succeed:**
@@ -123,12 +123,12 @@ Install Active Directory
  - Confirmation: Install
  - Screenshot below is the final installation screen
 
-<img src="https://i.imgur.com/FfvG8mJ.png" height="50%" width="60%" alt="Creating Client"/>
+<img src="https://i.imgur.com/FfvG8mJ.png" height="50%" width="60%" alt="Installing Active directory domain services"/>
  
 **9. Promote as a Domain controller:**
  - Top right corner of the screen there is a yellow exclamation symbol. Click this symbol --> Promote this server to a domain controller
 
- <img src="https://i.imgur.com/twBhGZa.png" height="70%" width="70%" alt="Creating Client"/> 
+ <img src="https://i.imgur.com/twBhGZa.png" height="70%" width="70%" alt="Server manager"/> 
    
  - Check Add a new forest
  - Root domain name: mydomain.com (or whatever domain you choose) --> Next
@@ -142,7 +142,7 @@ Install Active Directory
 **10. Log back into DC-1 as the user (domain name\username):**
   - In Azure portal Refresh DC-1
     
-    <img src="https://i.imgur.com/l0645bI.png" height="70%" width="70%" alt="Creating Client"/>
+    <img src="https://i.imgur.com/l0645bI.png" height="70%" width="70%" alt="DC-1 overview"/>
     
   - Log back into DC-1 as (domain name\username) <br> <br>
 
@@ -159,13 +159,13 @@ Create an Admin and Normal User Account in Active Directory
  - In your domain --> Right click --> New --> Organizational Unit --> _ADMINS
  - Once both OU has been created should look like the image below
 
-<img src="https://i.imgur.com/bhCEGLP.png" height="70%" width="70%" alt="Creating Client"/>
+<img src="https://i.imgur.com/bhCEGLP.png" height="70%" width="70%" alt="Active directory users and computers"/>
    
 **13. Create an admin account:**
  - Go to the _ADMINS OU you created --> Right click --> New --> User 
  - Give the account a name and login name --> Next
 
-<img src="https://i.imgur.com/nJwr0bl.png" height="50%" width="60%" alt="Creating Client"/>
+<img src="https://i.imgur.com/nJwr0bl.png" height="50%" width="60%" alt="Creating a user in active directory users and computers"/>
     
  - Add a password --> Next --> Finish
 
@@ -174,7 +174,7 @@ Create an Admin and Normal User Account in Active Directory
  **14. Add the account you created previously to the Domain Admins Security Group:**
   - Right click the account you made --> Properties --> Member of --> Add --> Type domain admins --> Check Names --> OK --> Apply -- OK
 
-  <img src="https://i.imgur.com/KdPfaBt.png" height="50%" width="50%" alt="Creating Client"/>
+  <img src="https://i.imgur.com/KdPfaBt.png" height="50%" width="50%" alt="Add to domain admins"/>
    
    
   **15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account):**
@@ -187,15 +187,15 @@ Join Client-1 to your domain
 **16. From the Azure portal, set Client-1's DNS settings to the DC-1's Private IP address:**
  - Go to the Azure portal --> Virtual machines --> DC-1 --> Networking --> Next to NIC Private IP, copy this address
 
-  <img src="https://i.imgur.com/HEPUjd1.png" height="70%" width="70%" alt="Creating Client"/>
+  <img src="https://i.imgur.com/HEPUjd1.png" height="70%" width="70%" alt="DC-1 networking screen in Azure"/>
 
   - Go to Virtual machines --> Client-1 --> Networking --> Click the link next to 'Network Interface'
 
-  <img src="https://i.imgur.com/rz9UYIQ.png" height="70%" width="70%" alt="Creating Client"/>
+  <img src="https://i.imgur.com/rz9UYIQ.png" height="70%" width="70%" alt=""DC-1 networking screen in Azure"/>
 
   - Under Settings, click DNS Servers --> Custom --> Paste DC-1's private IP address under DNS server --> Save
 
-  <img src="https://i.imgur.com/9LlaVaj.png" height="70%" width="70%" alt="Creating Client"/>
+  <img src="https://i.imgur.com/9LlaVaj.png" height="70%" width="70%" alt="Client-1 DNS servers screen"/>
     
   **17. From the Azure portal, restart Client-1:**
    - Go to Virtual Machines, Client-1 --> Restart
@@ -205,17 +205,17 @@ Join Client-1 to your domain
    - Start --> cmd --> ipconfig /all
    - Next to DNS Servers should be DC-1's private IP address
     
-     <img src="https://i.imgur.com/3DhboEO.png" height="70%" width="70%" alt="Creating Client"/>
+     <img src="https://i.imgur.com/3DhboEO.png" height="70%" width="70%" alt="Command prompt"/>
 
    - Right click Start --> System --> Rename this PC (advanced) --> Change --> Domain --> Type your domain name --> OK
    - Enter the username and password of your admin account
      - For example: mydomain.com\werner_admin
 
-<img src="https://i.imgur.com/0m2JQSF.png" height="40%" width="50%" alt="Creating Client"/>
+<img src="https://i.imgur.com/0m2JQSF.png" height="40%" width="50%" alt="System setting"/>
 
-<img src="https://i.imgur.com/HKDeXoE.png" height="40%" width="50%" alt="Creating Client"/>
+<img src="https://i.imgur.com/HKDeXoE.png" height="40%" width="50%" alt="System properties"/>
 
-<img src="https://i.imgur.com/lVx7bAt.png" height="40%" width="50%" alt="Creating Client"/>
+<img src="https://i.imgur.com/lVx7bAt.png" height="40%" width="50%" alt="Domain changes"/>
      
     
   **19. Login to DC-1 and check to see if Client-1 appears in Active Directory Users and Computers (ADUC) inside the "Computers" container:**
@@ -229,7 +229,7 @@ Join Client-1 to your domain
   - Right click Start --> System --> Remote desktop --> Select users that can remotely access this PC
   - Add --> Type 'domain users' --> Check Names --> OK
   
-  <img src="https://i.imgur.com/qNi9X2a.png" height="65%" width="65%" alt="Log in as admin"/>
+  <img src="https://i.imgur.com/qNi9X2a.png" height="65%" width="65%" alt="Adding remote desktop users"/>
   
 Create many additional users and attempt to log into Client-1 with one of the users
 -- 
@@ -246,16 +246,16 @@ Create many additional users and attempt to log into Client-1 with one of the us
 **24. Run the script and observe the accounts being created:**
  - Click the Green arrow to run the script (image below)
 
-<img src="https://i.imgur.com/OzUBskO.png" height="60%" width="60%" alt="Log in as admin"/>
+<img src="https://i.imgur.com/OzUBskO.png" height="60%" width="60%" alt="Powershell ISE running created users script"/>
   
 **25. Open ADUC and observe the accounts in the _EMPLOYEES OU:**
     
-<img src="https://i.imgur.com/idcs1CJ.png" height="60%" width="60%" alt="Log in as admin"/>
+<img src="https://i.imgur.com/idcs1CJ.png" height="60%" width="60%" alt="users created in Active directory users and computers"/>
 
 **26. Login to Client-1 with one of the accounts created from the script:**
  - **Note:** Password is Password1
 
-<img src="https://i.imgur.com/WHvAkU5.png" height="60%" width="60%" alt="Log in as admin"/>
+<img src="https://i.imgur.com/WHvAkU5.png" height="60%" width="60%" alt="remote desktop login"/>
    
   
 
