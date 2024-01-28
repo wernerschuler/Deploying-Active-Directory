@@ -32,7 +32,7 @@ Setup Resources in Azure
 
   <img src="https://i.imgur.com/Vg5blOJ.png" height="50%" width="50%" alt="Creating Domain controller in Azure"/>
     
-  - Click Next until you get to Networking page --> Check that a Virtual Network has been created and make a note of the name of it
+  - Click Next until you get to the Networking page --> Check that a Virtual Network has been created and make a note of the name of it
   - In the example below a Virtual network called 'DC-1-vnet' is created
 
   <img src="https://i.imgur.com/eyUSnYX.png" height="50%" width="50%" alt="Creating Domain controller in Azure"/>
