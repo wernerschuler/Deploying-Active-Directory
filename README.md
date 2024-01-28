@@ -56,7 +56,7 @@ Setup Resources in Azure
   
   **3. Create the Client-1 VM (virtual machine):**
   - Go to Virtual machines --> Create --> Azure virtual machine 
-  - Use the same resource group that was created in step 1
+  - Use the same resource group that was created in Step 1
   - Name the VM Client-1
   - Set the same region as DC-1
   - Set the Image to Windows 10
