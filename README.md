@@ -23,7 +23,7 @@ Setup Resources in Azure
   **1. Create the Domain Controller VM named DC-1:**
   - Go to portal.azure.com --> Virtual machines --> Create, then Azure virtual machine
   - Create a Resource group 
-  - Give the VM a name of DC-1 
+  - Give the VM the name of DC-1 
   - Set your region 
   - Set Image to Windows Server 2022 
   - Set Size to 2 vcpu or more 
@@ -121,12 +121,12 @@ Install Active Directory
  - Features: Next
  - AD DS: Next
  - Confirmation: Install
- - Screenshot below is the final installation screen
+ - The screenshot below is the final installation screen
 
 <img src="https://i.imgur.com/FfvG8mJ.png" height="50%" width="60%" alt="Installing Active directory domain services"/>
  
 **9. Promote as a Domain controller:**
- - Top right corner of the screen there is a yellow exclamation symbol. Click this symbol --> Promote this server to a domain controller
+ - In the top right corner of the screen there is a yellow exclamation symbol. Click this symbol --> Promote this server to a domain controller
 
  <img src="https://i.imgur.com/twBhGZa.png" height="70%" width="70%" alt="Server manager"/> 
    
@@ -134,7 +134,7 @@ Install Active Directory
  - Root domain name: mydomain.com (or whatever domain you choose) --> Next
  - Add a password --> Next
  - DNS Options: Next
- - Addtional Options: Next
+ - Additional Options: Next
  - Paths: Next
  - Prerequisites Check: Install
  - Once completed DC-1 will restart
@@ -157,7 +157,7 @@ Create an Admin and Normal User Account in Active Directory
 **12. Create an Organisational Unit named _ADMINS**
  - In ADUC
  - In your domain --> Right click --> New --> Organizational Unit --> _ADMINS
- - Once both OU has been created should look like the image below
+ - Once both OU have been created should look like the image below
 
 <img src="https://i.imgur.com/bhCEGLP.png" height="70%" width="70%" alt="Active directory users and computers"/>
    
@@ -172,13 +172,13 @@ Create an Admin and Normal User Account in Active Directory
  
 
  **14. Add the account you created previously to the Domain Admins Security Group:**
-  - Right click the account you made --> Properties --> Member of --> Add --> Type domain admins --> Check Names --> OK --> Apply -- OK
+  - Right-click the account you made --> Properties --> Member of --> Add --> Type domain admins --> Check Names --> OK --> Apply -- OK
 
   <img src="https://i.imgur.com/KdPfaBt.png" height="50%" width="50%" alt="Add to domain admins"/>
    
    
   **15. Log out the Remote Desktop connection to DC-1 and log back in as (domain name\admin account):**
-   - Log out of DC-1 --> Bring up Remote Desktop connnection --> Enter DC-1's public IP address --> Login with (domain name\admin account)
+   - Log out of DC-1 --> Bring up Remote Desktop connection --> Enter DC-1's public IP address --> Login with (domain name\admin account)
    - For example mydomain.com\werner_admin
     
 Join Client-1 to your domain
@@ -241,7 +241,7 @@ Create many additional users and attempt to log into Client-1 with one of the us
  - Start --> Type 'Powershell ISE' --> Right click --> Run as administrator
 
 **23. Create a new File and paste the contents of the script into it:**
- - Click New Script (White symbol in the top left hand corner)
+ - Click New Script (White symbol in the top left-hand corner)
  - Copy and paste the contents of this link into the script: https://1drv.ms/t/s!Asco8VMuK30rkCdIKbGkgFkZQSmI?e=63Zbig 
 
 **24. Run the script and observe the accounts being created:**
